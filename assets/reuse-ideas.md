@@ -54,6 +54,6 @@ Check the hold: handheld drift at the waterline.
 | zaf-video-012 bottles filling | Tight on the liquid: the glow on the line. C heritage, R1 liquid (supporting) |
 | zaf-video-041 water caustics | C colour field, S background |
 | zaf-photo-099 dunes (ripples) | C colour field (heritage), S background |
-| zaf-photo-100 desert, dune and sky | Dune curve against the blue sky (4:5 crop 850:1062:750:0): C cover with the title in the sky. Purple shrub (crop 700:875:1000:192): C colour field, a nod to the crocus. S background |
+| zaf-photo-100 desert, dune and sky | Dune curve against the blue sky (4:5 crop 850:1062:750:0): C cover with the title in the sky. Purple shrub (crop 600:750:900:317): C colour field, a nod to the crocus. S background |
 | zaf-ig-004 thread bed | C ingredient, G slide 2 |
 | zaf-ig-011 four-pack by the sea | G cover (Oman) |
