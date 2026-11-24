@@ -1,0 +1,4409 @@
+# assets/index.yaml
+# Index of every asset in assets/photos, assets/video, assets/logos, assets/fonts, assets/reference.
+# One entry per asset so AI can find the right one without guessing.
+#
+# STATUS (2026-11-18): logos (6 versions x SVG/PDF/EPS/PNG), Rubik fonts, palette sheet,
+# 97 photos, 42 videos, 39 past Instagram posts, 1 stock reference.
+# Photos are web copies (long edge 2048 px); videos are H.264, 1080p, 30 fps.
+# Full-res originals: `original` (Drive link where the file is in the Drive folder).
+# Rights: Zafra owns the rights to all people in its photos and videos.
+# `brand_book_fit` = Bower's read against brand book v1.2 photography rules.
+# Shoots: studio | factory-italy | denim-iphone | beach-iphone | pool-iphone |
+#         hands-iphone | instagram-archive | stock
+# pillar = slug from brand/pillars.md (quiet-saffron-luxury | modern-ritual | saffron-explained |
+#          where-to-find-us | heritage-not-hype)
+# Clip moments, camera check and postcard picks: assets/video-clips.yaml. Crop recipes: assets/reuse-ideas.md.
+# Masters (full resolution, for tight crops): assets/video/masters/.
+#
+# Schema per asset:
+#   id: zaf-<type>-<nnn>
+#   file: path relative to assets/ (e.g. photos/zaf-photo-001.jpg)
+#   type, shoot, orientation, size_px, duration_s, source_file, original, brand_book_fit
+#   description: short, plain description of what the asset is
+#   usage_rule: when this specific asset is allowed to be used
+#   tags: list of descriptive tags
+#   product: product id from products/products.yaml, or null
+#   pillar: slug from brand/pillars.md, or null
+#   used_in: list of content/drafts or content/approved files this asset is used in
+#   times_used: number of pieces (bump on every use)
+#   last_used: null
+#   master: path to a full-resolution copy in assets/video/masters/, if any
+#
+assets:
+- id: zaf-logo-001
+  file: logos/zafra-logo-primary-cream-on-red.svg
+  description: 'Primary logo: cream script wordmark on a Zafra Red field (SVG, master for web and digital). Ink: #F5471C field, #FFF9E5 ink.'
+  usage_rule: Default logo. Avatars, hero banners, end slides. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - primary-cream-on-red
+  - svg
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-002
+  file: logos/zafra-logo-primary-cream-on-red.pdf
+  description: 'Primary logo: cream script wordmark on a Zafra Red field (PDF, print). Ink: #F5471C field, #FFF9E5 ink.'
+  usage_rule: Default logo. Avatars, hero banners, end slides. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - primary-cream-on-red
+  - pdf
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-003
+  file: logos/zafra-logo-primary-cream-on-red.eps
+  description: 'Primary logo: cream script wordmark on a Zafra Red field (EPS, print, for suppliers who ask for EPS). Ink: #F5471C field, #FFF9E5 ink.'
+  usage_rule: Default logo. Avatars, hero banners, end slides. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - primary-cream-on-red
+  - eps
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-004
+  file: logos/zafra-logo-primary-cream-on-red.png
+  description: 'Primary logo: cream script wordmark on a Zafra Red field (PNG, 4000x2257 raster, only where SVG is not accepted). Ink: #F5471C field, #FFF9E5 ink.'
+  usage_rule: Default logo. Avatars, hero banners, end slides. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - primary-cream-on-red
+  - png
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-005
+  file: logos/zafra-logo-secondary-red-on-cream.svg
+  description: 'Secondary logo: red script wordmark on a cream field (SVG, master for web and digital). Ink: #FFF9E5 field, #F5471C ink.'
+  usage_rule: Light layouts, documents, cream pages. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - secondary-red-on-cream
+  - svg
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-006
+  file: logos/zafra-logo-secondary-red-on-cream.pdf
+  description: 'Secondary logo: red script wordmark on a cream field (PDF, print). Ink: #FFF9E5 field, #F5471C ink.'
+  usage_rule: Light layouts, documents, cream pages. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - secondary-red-on-cream
+  - pdf
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-007
+  file: logos/zafra-logo-secondary-red-on-cream.eps
+  description: 'Secondary logo: red script wordmark on a cream field (EPS, print, for suppliers who ask for EPS). Ink: #FFF9E5 field, #F5471C ink.'
+  usage_rule: Light layouts, documents, cream pages. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - secondary-red-on-cream
+  - eps
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-008
+  file: logos/zafra-logo-secondary-red-on-cream.png
+  description: 'Secondary logo: red script wordmark on a cream field (PNG, 4000x2257 raster, only where SVG is not accepted). Ink: #FFF9E5 field, #F5471C ink.'
+  usage_rule: Light layouts, documents, cream pages. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - secondary-red-on-cream
+  - png
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-009
+  file: logos/zafra-logo-red.svg
+  description: 'Red script wordmark, transparent (SVG, master for web and digital). Ink: #F5471C.'
+  usage_rule: On cream, Petal Mist, white or light photos. Not on Saffron Glow. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - red
+  - svg
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-010
+  file: logos/zafra-logo-red.pdf
+  description: 'Red script wordmark, transparent (PDF, print). Ink: #F5471C.'
+  usage_rule: On cream, Petal Mist, white or light photos. Not on Saffron Glow. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - red
+  - pdf
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-011
+  file: logos/zafra-logo-red.eps
+  description: 'Red script wordmark, transparent (EPS, print, for suppliers who ask for EPS). Ink: #F5471C.'
+  usage_rule: On cream, Petal Mist, white or light photos. Not on Saffron Glow. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - red
+  - eps
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-012
+  file: logos/zafra-logo-red.png
+  description: 'Red script wordmark, transparent (PNG, 4000x2257 raster, only where SVG is not accepted). Ink: #F5471C.'
+  usage_rule: On cream, Petal Mist, white or light photos. Not on Saffron Glow. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - red
+  - png
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-013
+  file: logos/zafra-logo-cream.svg
+  description: 'Cream script wordmark, transparent (SVG, master for web and digital). Ink: #FFF9E5.'
+  usage_rule: On Zafra Red, Deep Red, Violet or dark photos. Not on light backgrounds. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - cream
+  - svg
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-014
+  file: logos/zafra-logo-cream.pdf
+  description: 'Cream script wordmark, transparent (PDF, print). Ink: #FFF9E5.'
+  usage_rule: On Zafra Red, Deep Red, Violet or dark photos. Not on light backgrounds. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - cream
+  - pdf
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-015
+  file: logos/zafra-logo-cream.eps
+  description: 'Cream script wordmark, transparent (EPS, print, for suppliers who ask for EPS). Ink: #FFF9E5.'
+  usage_rule: On Zafra Red, Deep Red, Violet or dark photos. Not on light backgrounds. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - cream
+  - eps
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-016
+  file: logos/zafra-logo-cream.png
+  description: 'Cream script wordmark, transparent (PNG, 4000x2257 raster, only where SVG is not accepted). Ink: #FFF9E5.'
+  usage_rule: On Zafra Red, Deep Red, Violet or dark photos. Not on light backgrounds. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - cream
+  - png
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-017
+  file: logos/zafra-logo-saffron-glow.svg
+  description: 'Saffron Glow script wordmark, transparent (SVG, master for web and digital). Ink: #FFC23D.'
+  usage_rule: On Violet or Deep Red only. Not on cream, red or light photos. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - saffron-glow
+  - svg
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-018
+  file: logos/zafra-logo-saffron-glow.pdf
+  description: 'Saffron Glow script wordmark, transparent (PDF, print). Ink: #FFC23D.'
+  usage_rule: On Violet or Deep Red only. Not on cream, red or light photos. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - saffron-glow
+  - pdf
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-019
+  file: logos/zafra-logo-saffron-glow.eps
+  description: 'Saffron Glow script wordmark, transparent (EPS, print, for suppliers who ask for EPS). Ink: #FFC23D.'
+  usage_rule: On Violet or Deep Red only. Not on cream, red or light photos. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - saffron-glow
+  - eps
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-020
+  file: logos/zafra-logo-white.svg
+  description: 'White script wordmark, transparent (SVG, master for web and digital). Ink: #FFFFFF.'
+  usage_rule: Only where a platform forces pure white. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - white
+  - svg
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-021
+  file: logos/zafra-logo-white.pdf
+  description: 'White script wordmark, transparent (PDF, print). Ink: #FFFFFF.'
+  usage_rule: Only where a platform forces pure white. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - white
+  - pdf
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-022
+  file: logos/zafra-logo-white.eps
+  description: 'White script wordmark, transparent (EPS, print, for suppliers who ask for EPS). Ink: #FFFFFF.'
+  usage_rule: Only where a platform forces pure white. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - white
+  - eps
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-logo-023
+  file: logos/zafra-logo-white.png
+  description: 'White script wordmark, transparent (PNG, 4000x2257 raster, only where SVG is not accepted). Ink: #FFFFFF.'
+  usage_rule: Only where a platform forces pure white. Never recolour, stretch, outline or straighten. Min 80 px wide.
+  tags:
+  - logo
+  - wordmark
+  - white
+  - png
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-font-001
+  file: fonts/Rubik-Variable.woff2
+  description: Rubik variable font, roman, weights 300-900 (web)
+  usage_rule: 'Body, labels, and headline fallback until Euclid Flex arrives. Licence: SIL OFL 1.1 (fonts/OFL.txt), keep it with the files.'
+  tags:
+  - font
+  - rubik
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-font-002
+  file: fonts/Rubik-Italic-Variable.woff2
+  description: Rubik variable font, italic, weights 300-900 (web)
+  usage_rule: 'Emphasis in body copy. Licence: SIL OFL 1.1 (fonts/OFL.txt), keep it with the files.'
+  tags:
+  - font
+  - rubik
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-font-003
+  file: fonts/Rubik-VariableFont_wght.ttf
+  description: Rubik variable font, roman (desktop install)
+  usage_rule: 'Install for design tools. Licence: SIL OFL 1.1 (fonts/OFL.txt), keep it with the files.'
+  tags:
+  - font
+  - rubik
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-font-004
+  file: fonts/Rubik-Italic-VariableFont_wght.ttf
+  description: Rubik variable font, italic (desktop install)
+  usage_rule: 'Install for design tools. Licence: SIL OFL 1.1 (fonts/OFL.txt), keep it with the files.'
+  tags:
+  - font
+  - rubik
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ref-001
+  file: reference/zafra-colour-palette-sheet.png
+  description: 'Zafra colour palette sheet as supplied: 8 colours with CMYK, RGB, HEX, Pantone. Set in Euclid Flex.'
+  usage_rule: Reference only, not for publishing.
+  tags:
+  - reference
+  - colour
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-001
+  file: photos/zaf-photo-001.jpg
+  type: photo
+  shoot: studio
+  description: 'Hero still life: bottle on a bed of lemons with a halved lemon, saffron threads and a pink rose.'
+  usage_rule: 'Hero asset: feed, website, ads, decks. Pair with the cream or yellow logo only.'
+  brand_book_fit: Strong. Professional studio; bold colour fields rather than the book's soft golden-hour look.
+  tags:
+  - studio
+  - hero
+  - product
+  - yellow lemons
+  orientation: portrait
+  size_px:
+  - 1638
+  - 2048
+  source_file: Zafra0005.tif
+  original: https://drive.google.com/file/d/1-fldN_OsXt46Ty8v7N1TLb6bWSVODCt6/view
+  product: zafra-saffron
+  pillar: quiet-saffron-luxury
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-002
+  file: photos/zaf-photo-002.jpg
+  type: photo
+  shoot: studio
+  description: 'Flat lay: eight bottles arranged on a magenta/violet background.'
+  usage_rule: 'Hero asset: feed, website, ads, decks. Pair with the cream or yellow logo only.'
+  brand_book_fit: Strong. Professional studio; bold colour fields rather than the book's soft golden-hour look.
+  tags:
+  - studio
+  - hero
+  - product
+  - magenta
+  orientation: portrait
+  size_px:
+  - 1638
+  - 2048
+  source_file: Zafra0012.jpg
+  original: https://drive.google.com/file/d/137iwh-D0BAsnbB90-wa4NjZH44XB1LPn/view
+  product: zafra-saffron
+  pillar: quiet-saffron-luxury
+  master: photos/masters/zaf-photo-002-full.jpg
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-003
+  file: photos/zaf-photo-003.jpg
+  type: photo
+  shoot: studio
+  description: 'Overhead: glass of Zafra over ice with a lemon slice and saffron threads, sun-shadow stripes on red-orange.'
+  usage_rule: 'Hero asset: feed, website, ads, decks. Pair with the cream or yellow logo only.'
+  brand_book_fit: Strong. Professional studio; bold colour fields rather than the book's soft golden-hour look.
+  tags:
+  - studio
+  - hero
+  - product
+  - zafra red
+  orientation: portrait
+  size_px:
+  - 1639
+  - 2048
+  source_file: Zafra0029.jpg
+  original: https://drive.google.com/file/d/1nZLZXoDt1K46a9c9W2ufbmKdWAkW7ANw/view
+  product: zafra-saffron
+  pillar: quiet-saffron-luxury
+  master: photos/masters/zaf-photo-003-full.jpg
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-004
+  file: photos/zaf-photo-004.jpg
+  type: photo
+  shoot: studio
+  description: 'Packshot-style: two bottles standing, one lying, peach to red gradient background, white table.'
+  usage_rule: 'Hero asset: feed, website, ads, decks. Pair with the cream or yellow logo only.'
+  brand_book_fit: Strong. Professional studio; bold colour fields rather than the book's soft golden-hour look.
+  tags:
+  - studio
+  - hero
+  - product
+  - peach/red
+  orientation: portrait
+  size_px:
+  - 1638
+  - 2048
+  source_file: Zafra0037.jpg
+  original: https://drive.google.com/file/d/1J2YqSlQAlQWDvusNnhIg4IDenkhojKgB/view
+  product: zafra-saffron
+  pillar: quiet-saffron-luxury
+  master: photos/masters/zaf-photo-004-full.jpg
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-005
+  file: photos/zaf-photo-005.jpg
+  type: photo
+  shoot: studio
+  description: 'Pour: Zafra poured from the bottle into a tall fluted glass with ice, red-orange background.'
+  usage_rule: 'Hero asset: feed, website, ads, decks. Pair with the cream or yellow logo only.'
+  brand_book_fit: Strong. Professional studio; bold colour fields rather than the book's soft golden-hour look.
+  tags:
+  - studio
+  - hero
+  - product
+  - zafra red
+  orientation: portrait
+  size_px:
+  - 1639
+  - 2048
+  source_file: Zafra0069.jpg
+  original: https://drive.google.com/file/d/14-rFp6FfuiVREDpKOWdYVduOmaJaG3q4/view
+  product: zafra-saffron
+  pillar: quiet-saffron-luxury
+  master: photos/masters/zaf-photo-005-full.jpg
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-006
+  file: photos/zaf-photo-006.jpg
+  type: photo
+  shoot: factory-italy
+  description: Close-up of a pile of red Zafra-branded crown caps.
+  usage_rule: Craft and production stories ("produced in Italy"), carousel texture slides.
+  brand_book_fit: Good detail texture; industrial, so use as supporting, not hero.
+  tags:
+  - production
+  - caps
+  - detail
+  - texture
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1365
+  source_file: IMG_6321.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-007
+  file: photos/zaf-photo-007.jpg
+  type: photo
+  shoot: factory-italy
+  description: Close-up of a pile of red Zafra-branded crown caps.
+  usage_rule: Craft and production stories ("produced in Italy"), carousel texture slides.
+  brand_book_fit: Good detail texture; industrial, so use as supporting, not hero.
+  tags:
+  - production
+  - caps
+  - detail
+  - texture
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1365
+  source_file: IMG_6322.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-008
+  file: photos/zaf-photo-008.jpg
+  type: photo
+  shoot: factory-italy
+  description: Close-up of a pile of red Zafra-branded crown caps.
+  usage_rule: Craft and production stories ("produced in Italy"), carousel texture slides.
+  brand_book_fit: Good detail texture; industrial, so use as supporting, not hero.
+  tags:
+  - production
+  - caps
+  - detail
+  - texture
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1365
+  source_file: IMG_6323.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-009
+  file: photos/zaf-photo-009.jpg
+  type: photo
+  shoot: factory-italy
+  description: Close-up of a pile of red Zafra-branded crown caps.
+  usage_rule: Craft and production stories ("produced in Italy"), carousel texture slides.
+  brand_book_fit: Good detail texture; industrial, so use as supporting, not hero.
+  tags:
+  - production
+  - caps
+  - detail
+  - texture
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1365
+  source_file: IMG_6324.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-010
+  file: photos/zaf-photo-010.jpg
+  type: photo
+  shoot: factory-italy
+  description: Close-up of a pile of red Zafra-branded crown caps.
+  usage_rule: Craft and production stories ("produced in Italy"), carousel texture slides.
+  brand_book_fit: Good detail texture; industrial, so use as supporting, not hero.
+  tags:
+  - production
+  - caps
+  - detail
+  - texture
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1365
+  source_file: IMG_6325.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-011
+  file: photos/zaf-photo-011.jpg
+  type: photo
+  shoot: factory-italy
+  description: Filling machine with bottles of Zafra being filled.
+  usage_rule: Craft and production stories ("produced in Italy"). Behind-the-scenes only.
+  brand_book_fit: 'Industrial and cool-lit: against the book''s warm light. Behind-the-scenes use only, never hero.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: portrait
+  size_px:
+  - 1365
+  - 2048
+  source_file: IMG_6328.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-012
+  file: photos/zaf-photo-012.jpg
+  type: photo
+  shoot: factory-italy
+  description: Single filled bottle in the capping station (station 13).
+  usage_rule: Craft and production stories ("produced in Italy"). Behind-the-scenes only.
+  brand_book_fit: 'Industrial and cool-lit: against the book''s warm light. Behind-the-scenes use only, never hero.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: portrait
+  size_px:
+  - 1365
+  - 2048
+  source_file: IMG_6344.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-013
+  file: photos/zaf-photo-013.jpg
+  type: photo
+  shoot: factory-italy
+  description: Labelled Zafra bottles running through the labelling machine, close-up of labels.
+  usage_rule: Craft and production stories ("produced in Italy"). Behind-the-scenes only.
+  brand_book_fit: 'Industrial and cool-lit: against the book''s warm light. Behind-the-scenes use only, never hero.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: portrait
+  size_px:
+  - 1365
+  - 2048
+  source_file: IMG_6350.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-014
+  file: photos/zaf-photo-014.jpg
+  type: photo
+  shoot: factory-italy
+  description: Labelled bottles on the labeller, angled close-up.
+  usage_rule: Craft and production stories ("produced in Italy"). Behind-the-scenes only.
+  brand_book_fit: 'Industrial and cool-lit: against the book''s warm light. Behind-the-scenes use only, never hero.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: portrait
+  size_px:
+  - 1365
+  - 2048
+  source_file: IMG_6351.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-015
+  file: photos/zaf-photo-015.jpg
+  type: photo
+  shoot: factory-italy
+  description: Conveyor of capped Zafra bottles curving through the factory floor.
+  usage_rule: Craft and production stories ("produced in Italy"). Behind-the-scenes only.
+  brand_book_fit: 'Industrial and cool-lit: against the book''s warm light. Behind-the-scenes use only, never hero.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: portrait
+  size_px:
+  - 1365
+  - 2048
+  source_file: IMG_6352.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-016
+  file: photos/zaf-photo-016.jpg
+  type: photo
+  shoot: factory-italy
+  description: Conveyor of capped bottles, rows of red Zafra caps in focus.
+  usage_rule: Craft and production stories ("produced in Italy"). Behind-the-scenes only.
+  brand_book_fit: 'Industrial and cool-lit: against the book''s warm light. Behind-the-scenes use only, never hero.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: portrait
+  size_px:
+  - 1365
+  - 2048
+  source_file: IMG_6353.JPG
+  original: https://drive.google.com/file/d/1jhEMhnytbWqxKwfIVdK2wTyRCd6OgH0M/view
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-017
+  file: photos/zaf-photo-017.jpg
+  type: photo
+  shoot: factory-italy
+  description: Conveyor of capped bottles, factory hall behind.
+  usage_rule: Craft and production stories ("produced in Italy"). Behind-the-scenes only.
+  brand_book_fit: 'Industrial and cool-lit: against the book''s warm light. Behind-the-scenes use only, never hero.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: portrait
+  size_px:
+  - 1365
+  - 2048
+  source_file: IMG_6354.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-018
+  file: photos/zaf-photo-018.jpg
+  type: photo
+  shoot: factory-italy
+  description: Conveyor of capped bottles, rows of red caps.
+  usage_rule: Craft and production stories ("produced in Italy"). Behind-the-scenes only.
+  brand_book_fit: 'Industrial and cool-lit: against the book''s warm light. Behind-the-scenes use only, never hero.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: portrait
+  size_px:
+  - 1365
+  - 2048
+  source_file: IMG_6355.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-019
+  file: photos/zaf-photo-019.jpg
+  type: photo
+  shoot: factory-italy
+  description: Labelled bottles lined up on the line inside the machine housing.
+  usage_rule: Craft and production stories ("produced in Italy"). Behind-the-scenes only.
+  brand_book_fit: 'Industrial and cool-lit: against the book''s warm light. Behind-the-scenes use only, never hero.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: portrait
+  size_px:
+  - 1365
+  - 2048
+  source_file: IMG_6367.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-020
+  file: photos/zaf-photo-020.jpg
+  type: photo
+  shoot: factory-italy
+  description: Labelled bottles on the line, machine detail in front.
+  usage_rule: Craft and production stories ("produced in Italy"). Behind-the-scenes only.
+  brand_book_fit: 'Industrial and cool-lit: against the book''s warm light. Behind-the-scenes use only, never hero.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: portrait
+  size_px:
+  - 1365
+  - 2048
+  source_file: IMG_6368.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-021
+  file: photos/zaf-photo-021.jpg
+  type: photo
+  shoot: factory-italy
+  description: Labelled bottles on the line, machine detail in front.
+  usage_rule: Craft and production stories ("produced in Italy"). Behind-the-scenes only.
+  brand_book_fit: 'Industrial and cool-lit: against the book''s warm light. Behind-the-scenes use only, never hero.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: portrait
+  size_px:
+  - 1365
+  - 2048
+  source_file: IMG_6369.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-022
+  file: photos/zaf-photo-022.jpg
+  type: photo
+  shoot: factory-italy
+  description: Labelled bottles on the line through the machine guard.
+  usage_rule: Craft and production stories ("produced in Italy"). Behind-the-scenes only.
+  brand_book_fit: 'Industrial and cool-lit: against the book''s warm light. Behind-the-scenes use only, never hero.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: portrait
+  size_px:
+  - 1365
+  - 2048
+  source_file: IMG_6370.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-023
+  file: photos/zaf-photo-023.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5551.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-024
+  file: photos/zaf-photo-024.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5552.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-025
+  file: photos/zaf-photo-025.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5553.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-026
+  file: photos/zaf-photo-026.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Product: orange leather tote full of Zafra bottles on a cream boucle chair, window light.'
+  usage_rule: 'Social and gifting stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Closest of this shoot to the book: warm window light, linen-like textures, quiet luxury.'
+  tags:
+  - product
+  - bag
+  - interior
+  - window-light
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5554.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: quiet-saffron-luxury
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-027
+  file: photos/zaf-photo-027.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Product: bottle resting inside a purple knotted designer bag, on pavement or grass.'
+  usage_rule: 'Social only. Third-party designer bag: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Partly on-brief: strong colour echo (violet), but casual light and a third-party product.'
+  tags:
+  - product
+  - bag
+  - detail
+  - purple
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5555.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-028
+  file: photos/zaf-photo-028.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5556.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-029
+  file: photos/zaf-photo-029.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5557.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-030
+  file: photos/zaf-photo-030.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Product: bottle resting inside a purple knotted designer bag, on pavement or grass.'
+  usage_rule: 'Social only. Third-party designer bag: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Partly on-brief: strong colour echo (violet), but casual light and a third-party product.'
+  tags:
+  - product
+  - bag
+  - detail
+  - purple
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5558.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-031
+  file: photos/zaf-photo-031.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Product: bottle resting inside a purple knotted designer bag, on pavement or grass.'
+  usage_rule: 'Social only. Third-party designer bag: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Partly on-brief: strong colour echo (violet), but casual light and a third-party product.'
+  tags:
+  - product
+  - bag
+  - detail
+  - purple
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5559.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-032
+  file: photos/zaf-photo-032.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5560.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-033
+  file: photos/zaf-photo-033.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5561.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-034
+  file: photos/zaf-photo-034.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5562.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-035
+  file: photos/zaf-photo-035.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5563.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-036
+  file: photos/zaf-photo-036.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5564.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-037
+  file: photos/zaf-photo-037.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5565.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-038
+  file: photos/zaf-photo-038.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5566.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-039
+  file: photos/zaf-photo-039.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5567.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-040
+  file: photos/zaf-photo-040.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5569.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-041
+  file: photos/zaf-photo-041.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5570.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-042
+  file: photos/zaf-photo-042.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Product: bottle resting inside a purple knotted designer bag, on pavement or grass.'
+  usage_rule: 'Social only. Third-party designer bag: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Partly on-brief: strong colour echo (violet), but casual light and a third-party product.'
+  tags:
+  - product
+  - bag
+  - detail
+  - purple
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5571.JPG
+  original: https://drive.google.com/file/d/1x_xLodwlXJLJqfv5HTP_esth7dPAfvTI/view
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-043
+  file: photos/zaf-photo-043.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5572.JPG
+  original: https://drive.google.com/file/d/1dGoPg5Xhhzn6KPnDC9eb5PNCX6w6Ebfb/view
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-044
+  file: photos/zaf-photo-044.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5573.JPG
+  original: https://drive.google.com/file/d/1JGkbFnVKYgqRubedONvdbVlJmQ6kGn9E/view
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-045
+  file: photos/zaf-photo-045.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5574.JPG
+  original: https://drive.google.com/file/d/1ra0E6KdMGkNio5qHKcwRRQL22Es_pU5T/view
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-046
+  file: photos/zaf-photo-046.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5575.JPG
+  original: https://drive.google.com/file/d/1wdzE6DybiphRaue_QT178y4MyE_IWM0u/view
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-047
+  file: photos/zaf-photo-047.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5576.JPG
+  original: https://drive.google.com/file/d/1hpuJTrYn-XddMEjKo70BXwn8aJqrJjsl/view
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-048
+  file: photos/zaf-photo-048.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5577.JPG
+  original: https://drive.google.com/file/d/1NSR5iMV1rCINDo-j5n3BC6Mo2GlVpnSw/view
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-049
+  file: photos/zaf-photo-049.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Product: bottle resting inside a purple knotted designer bag, on pavement or grass.'
+  usage_rule: 'Social only. Third-party designer bag: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Partly on-brief: strong colour echo (violet), but casual light and a third-party product.'
+  tags:
+  - product
+  - bag
+  - detail
+  - purple
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5578.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-050
+  file: photos/zaf-photo-050.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Product: single bottle balanced on a white sneaker sole on grass.'
+  usage_rule: Social only.
+  brand_book_fit: 'Off-brief: playful, sportswear cue (book: no sportswear).'
+  tags:
+  - product
+  - grass
+  - playful
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5579.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-051
+  file: photos/zaf-photo-051.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Product: bottle resting inside a purple knotted designer bag, on pavement or grass.'
+  usage_rule: 'Social only. Third-party designer bag: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Partly on-brief: strong colour echo (violet), but casual light and a third-party product.'
+  tags:
+  - product
+  - bag
+  - detail
+  - purple
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5580.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-052
+  file: photos/zaf-photo-052.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5581.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-053
+  file: photos/zaf-photo-053.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5582.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-054
+  file: photos/zaf-photo-054.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Product: bottle resting inside a purple knotted designer bag, on pavement or grass.'
+  usage_rule: 'Social only. Third-party designer bag: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Partly on-brief: strong colour echo (violet), but casual light and a third-party product.'
+  tags:
+  - product
+  - bag
+  - detail
+  - purple
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5583.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-055
+  file: photos/zaf-photo-055.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Product: bottle resting inside a purple knotted designer bag, on pavement or grass.'
+  usage_rule: 'Social only. Third-party designer bag: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Partly on-brief: strong colour echo (violet), but casual light and a third-party product.'
+  tags:
+  - product
+  - bag
+  - detail
+  - purple
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5584.JPG
+  original: https://drive.google.com/file/d/1ORcHGhE_tu0Keg3pcUZBuwdaAVN6KwJG/view
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-056
+  file: photos/zaf-photo-056.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5585.JPG
+  original: https://drive.google.com/file/d/1-_Xa956YEDx9s7MsRoCHMmkhzCi7kS_G/view
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-057
+  file: photos/zaf-photo-057.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5586.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-058
+  file: photos/zaf-photo-058.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5587.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-059
+  file: photos/zaf-photo-059.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5588.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-060
+  file: photos/zaf-photo-060.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5589.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-061
+  file: photos/zaf-photo-061.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5590.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-062
+  file: photos/zaf-photo-062.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Product: orange leather tote full of Zafra bottles on a cream boucle chair, window light.'
+  usage_rule: 'Social and gifting stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Closest of this shoot to the book: warm window light, linen-like textures, quiet luxury.'
+  tags:
+  - product
+  - bag
+  - interior
+  - window-light
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5591.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: quiet-saffron-luxury
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-063
+  file: photos/zaf-photo-063.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Product: bottle resting inside a purple knotted designer bag, on pavement or grass.'
+  usage_rule: 'Social only. Third-party designer bag: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Partly on-brief: strong colour echo (violet), but casual light and a third-party product.'
+  tags:
+  - product
+  - bag
+  - detail
+  - purple
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5592.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-064
+  file: photos/zaf-photo-064.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Product: orange leather tote full of Zafra bottles on a cream boucle chair, window light.'
+  usage_rule: 'Social and gifting stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Closest of this shoot to the book: warm window light, linen-like textures, quiet luxury.'
+  tags:
+  - product
+  - bag
+  - interior
+  - window-light
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5593.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: quiet-saffron-luxury
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-065
+  file: photos/zaf-photo-065.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5595.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-066
+  file: photos/zaf-photo-066.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Product: bottle resting inside a purple knotted designer bag, on pavement or grass.'
+  usage_rule: 'Social only. Third-party designer bag: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Partly on-brief: strong colour echo (violet), but casual light and a third-party product.'
+  tags:
+  - product
+  - bag
+  - detail
+  - purple
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5596.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-067
+  file: photos/zaf-photo-067.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5597.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-068
+  file: photos/zaf-photo-068.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5598.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-069
+  file: photos/zaf-photo-069.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Product: orange leather tote full of Zafra bottles on a cream boucle chair, window light.'
+  usage_rule: 'Social and gifting stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Closest of this shoot to the book: warm window light, linen-like textures, quiet luxury.'
+  tags:
+  - product
+  - bag
+  - interior
+  - window-light
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5599.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: quiet-saffron-luxury
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-070
+  file: photos/zaf-photo-070.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Product: orange leather tote full of Zafra bottles on a cream boucle chair, window light.'
+  usage_rule: 'Social and gifting stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Closest of this shoot to the book: warm window light, linen-like textures, quiet luxury.'
+  tags:
+  - product
+  - bag
+  - interior
+  - window-light
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5600.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: quiet-saffron-luxury
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-071
+  file: photos/zaf-photo-071.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5601.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-072
+  file: photos/zaf-photo-072.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5602.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-073
+  file: photos/zaf-photo-073.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5603.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-074
+  file: photos/zaf-photo-074.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5604.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-075
+  file: photos/zaf-photo-075.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5605.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-076
+  file: photos/zaf-photo-076.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5607.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-077
+  file: photos/zaf-photo-077.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Product: orange leather tote full of Zafra bottles on a cream boucle chair, window light.'
+  usage_rule: 'Social and gifting stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Closest of this shoot to the book: warm window light, linen-like textures, quiet luxury.'
+  tags:
+  - product
+  - bag
+  - interior
+  - window-light
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5608.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: quiet-saffron-luxury
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-078
+  file: photos/zaf-photo-078.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5609.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-079
+  file: photos/zaf-photo-079.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5610.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-080
+  file: photos/zaf-photo-080.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5611.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-081
+  file: photos/zaf-photo-081.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Product: orange leather tote full of Zafra bottles on a cream boucle chair, window light.'
+  usage_rule: 'Social and gifting stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Closest of this shoot to the book: warm window light, linen-like textures, quiet luxury.'
+  tags:
+  - product
+  - bag
+  - interior
+  - window-light
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5612.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: quiet-saffron-luxury
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-082
+  file: photos/zaf-photo-082.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5614.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-083
+  file: photos/zaf-photo-083.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5615.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-084
+  file: photos/zaf-photo-084.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5616.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-085
+  file: photos/zaf-photo-085.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Product: bottle resting inside a purple knotted designer bag, on pavement or grass.'
+  usage_rule: 'Social only. Third-party designer bag: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Partly on-brief: strong colour echo (violet), but casual light and a third-party product.'
+  tags:
+  - product
+  - bag
+  - detail
+  - purple
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5617.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-086
+  file: photos/zaf-photo-086.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5618.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-087
+  file: photos/zaf-photo-087.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman in jeans with the embroidered Zafra flower patch, carrying an orange leather tote full of bottles, street and dark door behind.'
+  usage_rule: 'Social and stories. Designer bag visible: no paid ads or partner use without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: casual iPhone, no golden-hour light, third-party designer bag in frame.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - bag
+  - street
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5619.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-088
+  file: photos/zaf-photo-088.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: back of jeans with the embroidered Zafra flower patch, bottles tucked in the pocket and lying on the grass.'
+  usage_rule: 'Social only. Midriff visible: check against the book''s GCC modesty rule before use.'
+  brand_book_fit: 'Off-brief: casual iPhone; midriff visible conflicts with the GCC modesty guidance.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - grass
+  - pocket
+  orientation: landscape
+  size_px:
+  - 2048
+  - 1536
+  source_file: IMG_5622.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-089
+  file: photos/zaf-photo-089.jpg
+  type: photo
+  shoot: denim-iphone
+  description: 'Lifestyle: woman from behind against a red door, bottle in the back pocket of jeans with the Zafra flower patch.'
+  usage_rule: Social and stories.
+  brand_book_fit: 'Partly on-brief: strong Zafra Red ground, casual styling.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - red-door
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_5623.JPG
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-091
+  file: photos/zaf-photo-091.jpg
+  type: photo
+  shoot: beach-iphone
+  description: Two bottles nestled in dry sand, sunlit.
+  usage_rule: Social and stories, summer.
+  brand_book_fit: 'Good: sun-led, natural materials; iPhone quality.'
+  tags:
+  - product
+  - beach
+  - sand
+  - sun
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_6631.HEIC
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-092
+  file: photos/zaf-photo-092.jpg
+  type: photo
+  shoot: beach-iphone
+  description: Two bottles nestled in dry sand, sunlit.
+  usage_rule: Social and stories, summer.
+  brand_book_fit: 'Good: sun-led, natural materials; iPhone quality.'
+  tags:
+  - product
+  - beach
+  - sand
+  - sun
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_6632.HEIC
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-093
+  file: photos/zaf-photo-093.jpg
+  type: photo
+  shoot: beach-iphone
+  description: Two bottles nestled in dry sand, sunlit.
+  usage_rule: Social and stories, summer.
+  brand_book_fit: 'Good: sun-led, natural materials; iPhone quality.'
+  tags:
+  - product
+  - beach
+  - sand
+  - sun
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_6633.HEIC
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-094
+  file: photos/zaf-photo-094.jpg
+  type: photo
+  shoot: beach-iphone
+  description: Two bottles in sand, closer crop.
+  usage_rule: Social and stories, summer.
+  brand_book_fit: 'Good: sun-led, natural materials; iPhone quality.'
+  tags:
+  - product
+  - beach
+  - sand
+  - sun
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_6637.HEIC
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-095
+  file: photos/zaf-photo-095.jpg
+  type: photo
+  shoot: beach-iphone
+  description: Two bottles in sand, closer crop.
+  usage_rule: Social and stories, summer.
+  brand_book_fit: 'Good: sun-led, natural materials; iPhone quality.'
+  tags:
+  - product
+  - beach
+  - sand
+  - sun
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_6638.HEIC
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-096
+  file: photos/zaf-photo-096.jpg
+  type: photo
+  shoot: beach-iphone
+  description: Single bottle lying on wet sand with a long low-sun shadow.
+  usage_rule: Social, stories, website texture.
+  brand_book_fit: 'Strong: low sun and long shadow read as golden hour.'
+  tags:
+  - product
+  - beach
+  - sand
+  - golden-hour
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_6643.HEIC
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-097
+  file: photos/zaf-photo-097.jpg
+  type: photo
+  shoot: beach-iphone
+  description: Bottle lying at the shoreline as sea foam washes over it.
+  usage_rule: Social and stories, summer.
+  brand_book_fit: 'Good: natural, sunlit.'
+  tags:
+  - product
+  - beach
+  - sea
+  - foam
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_6644.HEIC
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-098
+  file: photos/zaf-photo-098.jpg
+  type: photo
+  shoot: beach-iphone
+  description: Bottle lying at the shoreline as sea foam washes over it.
+  usage_rule: Social and stories, summer.
+  brand_book_fit: 'Good: natural, sunlit.'
+  tags:
+  - product
+  - beach
+  - sea
+  - foam
+  orientation: portrait
+  size_px:
+  - 1536
+  - 2048
+  source_file: IMG_6645.HEIC
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-001
+  file: video/zaf-video-001.mp4
+  type: video
+  shoot: denim-iphone
+  description: 'Lifestyle walk: woman in jeans with the Zafra flower patch carrying a tan leather tote full of bottles, street.'
+  usage_rule: 'Reels and stories. Designer bag visible: no paid ads without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: handheld iPhone, designer bag.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - walk
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 21.9
+  source_file: IMG_3759.MOV
+  original: https://drive.google.com/file/d/1uFw6QpJzYWxCl-bpadWVVXsTDEk0_gVm/view
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-002
+  file: video/zaf-video-002.mp4
+  type: video
+  shoot: denim-iphone
+  description: 'Lifestyle walk: woman in jeans with the Zafra flower patch carrying a tan leather tote full of bottles, street.'
+  usage_rule: 'Reels and stories. Designer bag visible: no paid ads without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: handheld iPhone, designer bag.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - walk
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 12.8
+  source_file: IMG_3760.MOV
+  original: https://drive.google.com/file/d/15XDcvzblh4oC2jwoWTq4zcNe2_WVUX3W/view
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-003
+  file: video/zaf-video-003.mp4
+  type: video
+  shoot: denim-iphone
+  description: 'Lifestyle walk: woman in jeans with the Zafra flower patch carrying a tan leather tote full of bottles, street.'
+  usage_rule: 'Reels and stories. Designer bag visible: no paid ads without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: handheld iPhone, designer bag.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - walk
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 15.8
+  source_file: IMG_3761.MOV
+  original: https://drive.google.com/file/d/1Wcv-WDNXpuQJxBO8jQICDNbngi6iSsbE/view
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-004
+  file: video/zaf-video-004.mp4
+  type: video
+  shoot: denim-iphone
+  description: 'Lifestyle walk: woman in jeans with the Zafra flower patch carrying a tan leather tote full of bottles, street.'
+  usage_rule: 'Reels and stories. Designer bag visible: no paid ads without Zafra''s OK.'
+  brand_book_fit: 'Off-brief: handheld iPhone, designer bag.'
+  tags:
+  - lifestyle
+  - denim
+  - people
+  - walk
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 17.9
+  source_file: IMG_3762.MOV
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-005
+  file: video/zaf-video-005.mp4
+  type: video
+  shoot: beach-iphone
+  description: Bottle lying on sand casting a long sun shadow.
+  usage_rule: Reels, stories, website background loop.
+  brand_book_fit: 'Good: sun-led.'
+  tags:
+  - product
+  - beach
+  - sand
+  - sun
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 7.5
+  source_file: IMG_6639.MOV
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-006
+  file: video/zaf-video-006.mp4
+  type: video
+  shoot: beach-iphone
+  description: Bottle lying on sand casting a long sun shadow.
+  usage_rule: Reels, stories, website background loop.
+  brand_book_fit: 'Good: sun-led.'
+  tags:
+  - product
+  - beach
+  - sand
+  - sun
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 7.3
+  source_file: IMG_6650.MOV
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-007
+  file: video/zaf-video-007.mp4
+  type: video
+  shoot: beach-iphone
+  description: Bottle lying on sand casting a long sun shadow.
+  usage_rule: Reels, stories, website background loop.
+  brand_book_fit: 'Good: sun-led.'
+  tags:
+  - product
+  - beach
+  - sand
+  - sun
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 9.6
+  source_file: IMG_6651.MOV
+  original: https://drive.google.com/file/d/1Sl_S3G6kGv_VMegOGDnVvQi9Z_qAlLj3/view
+  master: video/masters/zaf-video-007-4k.mp4
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-008
+  file: video/zaf-video-008.mp4
+  type: video
+  shoot: factory-italy
+  description: Filling carousel with bottles moving through.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 6.6
+  source_file: MVI_6317.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-009
+  file: video/zaf-video-009.mp4
+  type: video
+  shoot: factory-italy
+  description: Filling machine, bottles with red caps exiting.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 8.8
+  source_file: MVI_6318.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-010
+  file: video/zaf-video-010.mp4
+  type: video
+  shoot: factory-italy
+  description: Filling machine, bottles with red caps exiting.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 5.2
+  source_file: MVI_6319.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-011
+  file: video/zaf-video-011.mp4
+  type: video
+  shoot: factory-italy
+  description: Empty bottles entering the filler behind glass.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 9.2
+  source_file: MVI_6326.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-012
+  file: video/zaf-video-012.mp4
+  type: video
+  shoot: factory-italy
+  description: Bottles being filled, close-up.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 5.4
+  source_file: MVI_6327.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-013
+  file: video/zaf-video-013.mp4
+  type: video
+  shoot: factory-italy
+  description: Bottles being filled, close-up.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 8.0
+  source_file: MVI_6329.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-014
+  file: video/zaf-video-014.mp4
+  type: video
+  shoot: factory-italy
+  description: Bottle being filled, tight close-up.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 8.6
+  source_file: MVI_6330.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-015
+  file: video/zaf-video-015.mp4
+  type: video
+  shoot: factory-italy
+  description: Capping machine, wide.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 10.4
+  source_file: MVI_6331.MP4
+  original: https://drive.google.com/file/d/12Yu-8fmutTLCb6Iun4pNF19_c7wGwLv6/view
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-016
+  file: video/zaf-video-016.mp4
+  type: video
+  shoot: factory-italy
+  description: Capping machine, wide.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 11.9
+  source_file: MVI_6332.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-017
+  file: video/zaf-video-017.mp4
+  type: video
+  shoot: factory-italy
+  description: Capping machine, wide.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 8.0
+  source_file: MVI_6333.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-018
+  file: video/zaf-video-018.mp4
+  type: video
+  shoot: factory-italy
+  description: Capped bottles on the conveyor, long view.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 15.5
+  source_file: MVI_6334.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-019
+  file: video/zaf-video-019.mp4
+  type: video
+  shoot: factory-italy
+  description: Capped bottles on the conveyor.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 10.6
+  source_file: MVI_6336.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-020
+  file: video/zaf-video-020.mp4
+  type: video
+  shoot: factory-italy
+  description: Empty glass bottles on the conveyor.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 5.0
+  source_file: MVI_6337.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-021
+  file: video/zaf-video-021.mp4
+  type: video
+  shoot: factory-italy
+  description: Empty glass bottles on the conveyor, close.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 5.4
+  source_file: MVI_6338.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-022
+  file: video/zaf-video-022.mp4
+  type: video
+  shoot: factory-italy
+  description: Empty glass bottles on the conveyor, close.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 10.8
+  source_file: MVI_6339.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-023
+  file: video/zaf-video-023.mp4
+  type: video
+  shoot: factory-italy
+  description: Single bottle in the capping station (13).
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 6.6
+  source_file: MVI_6345.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-024
+  file: video/zaf-video-024.mp4
+  type: video
+  shoot: factory-italy
+  description: Conveyor of capped bottles, red caps.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 7.2
+  source_file: MVI_6356.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-025
+  file: video/zaf-video-025.mp4
+  type: video
+  shoot: factory-italy
+  description: Bottle passing through the labeller.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 8.9
+  source_file: MVI_6357.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-026
+  file: video/zaf-video-026.mp4
+  type: video
+  shoot: factory-italy
+  description: Labelled bottles moving past camera, motion blur.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 12.2
+  source_file: MVI_6358.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-027
+  file: video/zaf-video-027.mp4
+  type: video
+  shoot: factory-italy
+  description: Labelled bottles moving past camera, motion blur.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 12.8
+  source_file: MVI_6359.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-028
+  file: video/zaf-video-028.mp4
+  type: video
+  shoot: factory-italy
+  description: Packing machine, horizontal wide.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: horizontal
+  size_px:
+  - 1920
+  - 1080
+  duration_s: 12.5
+  source_file: MVI_6372.MP4
+  original: https://drive.google.com/file/d/16HyAdRLR_EQEl_0VsER4Hm8XksrPHOqP/view
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-029
+  file: video/zaf-video-029.mp4
+  type: video
+  shoot: factory-italy
+  description: Packing machine folding a Zafra four-pack carton, horizontal.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: horizontal
+  size_px:
+  - 1920
+  - 1080
+  duration_s: 2.1
+  source_file: MVI_6374.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-030
+  file: video/zaf-video-030.mp4
+  type: video
+  shoot: pool-iphone
+  description: Two bottles and a yellow cylinder (pack or Zero Sugar? confirm) on a stone pool ledge, turquoise water behind.
+  usage_rule: Reels and stories, summer. Confirm what the yellow item is before use.
+  brand_book_fit: 'Good: sunlit, stone; turquoise is outside the palette.'
+  tags:
+  - product
+  - pool
+  - sun
+  - summer
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 11.1
+  source_file: MVI_6400.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-031
+  file: video/zaf-video-031.mp4
+  type: video
+  shoot: pool-iphone
+  description: Two bottles and a yellow cylinder (pack or Zero Sugar? confirm) on a stone pool ledge, turquoise water behind.
+  usage_rule: Reels and stories, summer. Confirm what the yellow item is before use.
+  brand_book_fit: 'Good: sunlit, stone; turquoise is outside the palette.'
+  tags:
+  - product
+  - pool
+  - sun
+  - summer
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 10.8
+  source_file: MVI_6401.MP4
+  original: https://drive.google.com/file/d/1Kdg4EPOa0jdq7DBM2emlwl8RRP-1AoQz/view
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-032
+  file: video/zaf-video-032.mp4
+  type: video
+  shoot: pool-iphone
+  description: Two bottles and a yellow cylinder (pack or Zero Sugar? confirm) on a stone pool ledge, turquoise water behind.
+  usage_rule: Reels and stories, summer. Confirm what the yellow item is before use.
+  brand_book_fit: 'Good: sunlit, stone; turquoise is outside the palette.'
+  tags:
+  - product
+  - pool
+  - sun
+  - summer
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 10.1
+  source_file: MVI_6402.MP4
+  original: https://drive.google.com/file/d/1gKKiCFmIaZOqN-nnEtXOJdyJGgcCb1WE/view
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-033
+  file: video/zaf-video-033.mp4
+  type: video
+  shoot: hands-iphone
+  description: Hands holding two bottles against a white linen skirt.
+  usage_rule: Reels, stories, transitions.
+  brand_book_fit: 'Good: linen, gracious gesture.'
+  tags:
+  - product
+  - hands
+  - linen
+  - people
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 4.6
+  source_file: MVI_6496.MP4
+  original: https://drive.google.com/file/d/19m6TWQkZ3xR0D8rcUbdQr_5g2Lu-E2My/view
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-034
+  file: video/zaf-video-034.mp4
+  type: video
+  shoot: hands-iphone
+  description: Hands holding two bottles against a white linen skirt.
+  usage_rule: Reels, stories, transitions.
+  brand_book_fit: 'Good: linen, gracious gesture.'
+  tags:
+  - product
+  - hands
+  - linen
+  - people
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 4.3
+  source_file: MVI_6497.MP4
+  original: https://drive.google.com/file/d/1HCoJilFOFHas4XOrvXGRZcKwtdZ41vYK/view
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-035
+  file: video/zaf-video-035.mp4
+  type: video
+  shoot: beach-iphone
+  description: Sea foam washing over sand, no product.
+  usage_rule: B-roll texture only.
+  brand_book_fit: Fine as texture.
+  tags:
+  - b-roll
+  - sea
+  - texture
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 3.3
+  source_file: IMG_6649.MOV
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-036
+  file: video/zaf-video-036.mp4
+  type: video
+  shoot: factory-italy
+  description: Filling and capping line, wide.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 17.8
+  source_file: MVI_6320.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-037
+  file: video/zaf-video-037.mp4
+  type: video
+  shoot: factory-italy
+  description: Capped bottles leaving the filler on the conveyor.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 15.7
+  source_file: MVI_6335.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-038
+  file: video/zaf-video-038.mp4
+  type: video
+  shoot: factory-italy
+  description: Empty glass bottles on the conveyor.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 15.5
+  source_file: MVI_6340.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-039
+  file: video/zaf-video-039.mp4
+  type: video
+  shoot: factory-italy
+  description: Bottles moving through the capper and labeller.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1920
+  duration_s: 22.3
+  source_file: MVI_6360.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-040
+  file: video/zaf-video-040.mp4
+  type: video
+  shoot: factory-italy
+  description: Packing machine, horizontal wide.
+  usage_rule: Craft and production reels ("produced in Italy"), behind the scenes.
+  brand_book_fit: 'Industrial light: never hero; cut short with warm product shots.'
+  tags:
+  - production
+  - factory
+  - bottling-line
+  orientation: horizontal
+  size_px:
+  - 1920
+  - 1080
+  duration_s: 24.9
+  source_file: MVI_6373.MP4
+  original: Emi's local download (Zafra Brand assets), full-res not in the Drive folder
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-001
+  file: instagram/zaf-ig-001.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: 'Retail: in-store tower of Zafra four-pack boxes and bottles, sign reading "the world''s first saffron drink".'
+  usage_rule: 'Reference only: "world''s first" claim not cleared for copy (_gaps.md 11).'
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1782310729_3926629258393643346_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-002
+  file: instagram/zaf-ig-002.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: 'Retail: shelf of Zafra bottles above a "New Arrivals" strip.'
+  usage_rule: Retail proof, stockist posts.
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1782310729_3926629259064756841_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: where-to-find-us
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-003
+  file: instagram/zaf-ig-003.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: 'Retail: Zafra sampling booth in a supermarket with a promoter in Zafra uniform.'
+  usage_rule: 'Retail proof. Person identifiable: Zafra owns rights (confirmed Nov 2026).'
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1782310729_3926629262227398662_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: where-to-find-us
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-004
+  file: instagram/zaf-ig-004.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Bottle lying on a bed of saffron threads.
+  usage_rule: 'Reuse OK: strong saffron cue.'
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1782651620_3929488966173496020_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: saffron-explained
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-005
+  file: instagram/zaf-ig-005.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Bottle caught in a net against a stadium at sunset (composite).
+  usage_rule: Past campaign; reuse only with a matching story.
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1784451027_3944583366316511536_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-006
+  file: instagram/zaf-ig-006.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Bottle and lemon on tanned skin with a red bikini string.
+  usage_rule: 'Do not reuse: conflicts with the book''s GCC modesty rule.'
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1784558604_3945485996196350186_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-007
+  file: instagram/zaf-ig-007.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Woven basket with lemons, striped linen, bottle and red ballet flats.
+  usage_rule: Reuse OK.
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1786280411_3959929559600592994_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-008
+  file: instagram/zaf-ig-008.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Person holding a four-pack box and bottles, sunglasses, patterned sarong.
+  usage_rule: Reuse OK.
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1786978121_3965782190674246358_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-009
+  file: instagram/zaf-ig-009.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Two bottles in a white net bag with sunglasses and sandals on pebbles.
+  usage_rule: Reuse OK.
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1786978121_3965782192125619094_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-010
+  file: instagram/zaf-ig-010.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Person holding a four-pack box in a net bag, sarong.
+  usage_rule: Reuse OK.
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1786978121_3965782193115494184_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-011
+  file: instagram/zaf-ig-011.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Four-pack box in a net bag on a wooden deck by the sea.
+  usage_rule: Reuse OK.
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1786978121_3965782193216054470_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-012
+  file: instagram/zaf-ig-012.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Zafra wordmark as a tan line on skin with a red bikini tie.
+  usage_rule: 'Do not reuse: conflicts with the book''s GCC modesty rule.'
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1787581981_3970847918664593240_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-013
+  file: instagram/zaf-ig-013.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Two bottles in a fridge door.
+  usage_rule: Reuse OK.
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1789563622_3987471125986452320_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-014
+  file: instagram/zaf-ig-014.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Bottle bursting through torn paper over saffron threads, red background.
+  usage_rule: Reuse OK.
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1789909247_3990370436537652746_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: saffron-explained
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-015
+  file: instagram/zaf-ig-015.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: '"Fun fact" card on saffron threads claiming saffron is a mood booster.'
+  usage_rule: 'Do not reuse: health claim.'
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1789909247_3990370436764165293_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-016
+  file: instagram/zaf-ig-016.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Two bottles on a pile of lemons, peach background.
+  usage_rule: Reuse OK.
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1791205232_4001241946927508800_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: quiet-saffron-luxury
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-017
+  file: instagram/zaf-ig-017.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Woman in a striped dress holding sunflowers and bottles.
+  usage_rule: Reuse OK.
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1792069260_4008489945462825031_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-018
+  file: instagram/zaf-ig-018.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Bottle beside a pink tumbler on a yoga mat (workout setting).
+  usage_rule: 'Do not reuse: wellness/performance framing and third-party product.'
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1792414805_4011388577073176523_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-019
+  file: instagram/zaf-ig-019.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Hands, towel, mug and bottle on a yoga mat (workout setting).
+  usage_rule: 'Do not reuse: wellness/performance framing.'
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1792414805_4011388577089971462_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-020
+  file: instagram/zaf-ig-020.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Tennis racket with bottle, tennis balls and lemons on a court.
+  usage_rule: 'Use with care: sport cue; no performance claims.'
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1792587614_4012838214158646283_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-021
+  file: instagram/zaf-ig-021.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Giveaway rules card "Want in?" on Zafra Red.
+  usage_rule: 'Past giveaway: reference only.'
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1793024066_4016499433712702578_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-022
+  file: instagram/zaf-ig-022.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Giveaway winner announcement card (November 2nd).
+  usage_rule: 'Past giveaway: reference only.'
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1793024066_4016499434677389357_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-023
+  file: instagram/zaf-ig-023.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: 'Giveaway: win a four-pack and a ClassPass voucher worth AED 200.'
+  usage_rule: 'Past giveaway: reference only.'
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1793024066_4016499434828397485_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-024
+  file: instagram/zaf-ig-024.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Saffron crocus macro with text "If nature says it's a match".
+  usage_rule: Past campaign (dating theme); reference.
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1793368809_4019391345932007023_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-025
+  file: instagram/zaf-ig-025.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Hand holding a bottle with an orange gift bag, text "It's a match".
+  usage_rule: Past campaign; reference.
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1793368809_4019391346452124755_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-026
+  file: instagram/zaf-ig-026.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Man in a cap drinking from the bottle against blue sky.
+  usage_rule: 'Use with care: casual, sportswear cue.'
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1793628014_4021565721519189481_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-027
+  file: instagram/zaf-ig-027.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Three bottles held against a purple top.
+  usage_rule: Reuse OK.
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1793800808_4023015215771675619_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-028
+  file: instagram/zaf-ig-028.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: Woven basket with vegetables and a four-pack box.
+  usage_rule: Reuse OK.
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1793973609_4024464777333813450_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-029
+  file: instagram/zaf-ig-029.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: 'Carousel slide 1: saffron flower macro, "Meet saffron".'
+  usage_rule: 'Reuse OK: on-voice series.'
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1794405601_4018711638257316859_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: saffron-explained
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-030
+  file: instagram/zaf-ig-030.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: 'Carousel slide 2: bottle on deep red, "Saffron, served neatly" with brand copy.'
+  usage_rule: 'Reuse OK: on-voice series.'
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1794405601_4018711638274135074_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: saffron-explained
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-031
+  file: instagram/zaf-ig-031.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: 'Carousel slide 3: saffron petal macro, "A distinctive character".'
+  usage_rule: 'Reuse OK: on-voice series.'
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1794405601_4018711638374750936_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: saffron-explained
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-032
+  file: instagram/zaf-ig-032.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  description: 'Carousel slide 4: saffron stigma macro, "Precious by nature".'
+  usage_rule: 'Reuse OK: on-voice series.'
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1794405601_4018711638626455476_76285868847.jpg
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: saffron-explained
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-033
+  file: instagram/zaf-ig-033.mp4
+  type: instagram-video
+  shoot: instagram-archive
+  description: 'Reel: saffron crocus flower on deep violet.'
+  usage_rule: Reuse OK.
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1770131858_3824465358925383664_76285868847.mp4
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: saffron-explained
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-034
+  file: instagram/zaf-ig-034.mp4
+  type: instagram-video
+  shoot: instagram-archive
+  description: 'Reel: factory filling line, text "Where the magic happens".'
+  usage_rule: Reuse OK.
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1781442036_3919342150102495084_76285868847.mp4
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-035
+  file: instagram/zaf-ig-035.mp4
+  type: instagram-video
+  shoot: instagram-archive
+  description: 'Reel: in-store display of bottles and boxes.'
+  usage_rule: Retail proof.
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1782310729_3926629270462255003_76285868847.mp4
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: where-to-find-us
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-036
+  file: instagram/zaf-ig-036.mp4
+  type: instagram-video
+  shoot: instagram-archive
+  description: 'Reel: shelf of bottles in store.'
+  usage_rule: Retail proof.
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1782310729_3926629281082231553_76285868847.mp4
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: where-to-find-us
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-037
+  file: instagram/zaf-ig-037.mp4
+  type: instagram-video
+  shoot: instagram-archive
+  description: 'Reel: sunset over the sea.'
+  usage_rule: B-roll, reuse OK.
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1786978121_3965782197600610169_76285868847.mp4
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-038
+  file: instagram/zaf-ig-038.mp4
+  type: instagram-video
+  shoot: instagram-archive
+  description: 'Reel: "Things we are currently obsessed with": bottle with accessories in dappled shade.'
+  usage_rule: Reuse OK.
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1791896479_4007040330607655703_76285868847.mp4
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-039
+  file: instagram/zaf-ig-039.mp4
+  type: instagram-video
+  shoot: instagram-archive
+  description: 'Reel: hand placing a bottle beside a stemmed metal goblet with ice.'
+  usage_rule: 'Do not reuse: stemmed barware implies alcohol (book).'
+  tags:
+  - instagram
+  - past-post
+  source_file: drinkzafra_1793196088_4017942277619940610_76285868847.mp4
+  original: Downloaded from @drinkzafra (Drive folder)
+  product: zafra-saffron
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ref-002
+  file: reference/unsplash-amirreza-karimi-WrVz_SPbAMY.jpg
+  type: reference
+  shoot: stock
+  description: Unsplash stock photo (Amirreza Karimi) found in the Drive folder.
+  usage_rule: Reference only. Not Zafra's; don't publish unless Zafra asks.
+  tags:
+  - reference
+  - stock
+  source_file: amirreza-karimi-WrVz_SPbAMY-unsplash.jpg
+  original: https://drive.google.com/file/d/1DmcS2T5yUFGGUyWYJhxQtumUtGgDa4GW/view
+  product: null
+  pillar: null
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-041
+  file: video/zaf-video-041.mp4
+  type: video
+  shoot: stock
+  description: Super 8 style film of sunlit water ripples (caustics), film frame edges visible. No product. Graded warm for the reel.
+  usage_rule: 'Cleared (Emi holds rights to all files she shares, 2026-11-17). Texture or background only. Crop inside the film borders, grade warm.'
+  brand_book_fit: 'Good: calm, natural, warm once graded. Does not show Dubai specifically.'
+  tags:
+  - b-roll
+  - water
+  - texture
+  - film
+  orientation: horizontal
+  size_px:
+  - 1920
+  - 1458
+  duration_s: 6.6
+  source_file: DTS_LA_CALMA_Parole_Dure_Clips_ID285.mp4
+  original: Sent by Emi in chat (2026-11-18)
+  product: null
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-042
+  file: video/zaf-video-042.mp4
+  type: video
+  shoot: stock
+  description: Camel caravan in silhouette crossing the desert at sunset, sun behind the camels.
+  usage_rule: 'Cleared (Emi, 2026-11-17). R1 postcard: crop the centre 9:16. Vertical crops soften it a little (1080p source).'
+  brand_book_fit: 'Strong: golden hour, Gulf heritage, calm.'
+  tags:
+  - b-roll
+  - desert
+  - camels
+  - golden-hour
+  - dubai
+  orientation: horizontal
+  size_px:
+  - 1920
+  - 1080
+  duration_s: 17.3
+  source_file: DTS_MISC_JOEY_VIDEOS_Joey_Bania_Clips_ID646.mp4
+  original: Sent by Emi in chat (2026-11-18)
+  product: null
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-043
+  file: video/zaf-video-043.mp4
+  type: video
+  shoot: stock
+  orientation: horizontal
+  size_px:
+  - 1920
+  - 1080
+  duration_s: 10.4
+  source_file: Camcorder_Saffron_Field_1.mp4
+  original: Supplied by Emi in chat, 2026-11-18
+  brand_book_fit: 'Good: real saffron crocus, threads visible in the opening close-up, then a slow pull back to the full field. Daylight, slightly green; no product.'
+  description: 'Saffron crocus field: close-up of purple blooms with red threads, pulling back to rows of crocus in a field.'
+  usage_rule: 'Cleared (Emi, 2026-11-17). Saffron story and heritage content. The camera pulls back after 3 s: use 0 to 3 s or the wide end (video-clips.yaml).'
+  tags:
+  - saffron
+  - crocus
+  - field
+  - harvest
+  - no-product
+  product: null
+  pillar: saffron-explained
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-044
+  file: video/zaf-video-044.mov
+  type: video
+  shoot: stock
+  orientation: vertical
+  size_px:
+  - 1080
+  - 1440
+  duration_s: 4.7
+  source_file: 11181.mov
+  original: Supplied by Emi in chat, 2026-11-18
+  brand_book_fit: 'Good: calm wide view of a saffron crocus field, slow movement, room for type at the top. Daylight, slightly green; no product.'
+  description: 'Saffron crocus field, wide: rows of purple crocus in grass, vertical 3:4.'
+  usage_rule: 'Cleared (Emi, 2026-11-17). Saffron story and heritage content, carousel and reel backgrounds.'
+  tags:
+  - saffron
+  - crocus
+  - field
+  - no-product
+  product: null
+  pillar: saffron-explained
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-045
+  file: video/zaf-video-045.mp4
+  master: video/masters/zaf-video-045-4k.mp4
+  type: video
+  shoot: stock
+  orientation: landscape
+  size_px: [1920, 1080]
+  master_size_px: [3840, 2160]
+  duration_s: 9.1
+  source_file: DTS_PRAIA_Agustin_Farias_Clips_ID208.mp4
+  original: Emi upload 2026-11-17
+  brand_book_fit: 'Good. Low sun on the sea, warm, no people. Handheld drift near the waterline.'
+  description: 'Sunset over the sea from the waterline, waves breaking, the sun''s path on the water. No product.'
+  usage_rule: 'Cleared (Emi holds rights to all files she shares, 2026-11-17). World reel (R2) and story backgrounds, beach season. Crop 9:16 from the 4K master; hold the crop.'
+  tags: [beach, sea, sunset, golden-hour, waves, no-product, world]
+  product: null
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-video-046
+  file: video/zaf-video-046.mp4
+  type: video
+  shoot: stock
+  orientation: landscape
+  size_px: [2048, 1556]
+  duration_s: 6.0
+  source_file: DTS_LA_CALMA_Parole_Dure_Clips_ID283.mp4
+  original: Emi upload 2026-11-17
+  brand_book_fit: 'Good. Super 8 film look, pale shoreline, calm. Film frame edges must be cropped out.'
+  description: 'Super 8 film of a pale sandy shoreline with small waves running in. No product.'
+  usage_rule: 'Cleared (Emi, 2026-11-17). World reel (R2), story and carousel lifestyle slides, beach season. Crop inside the film frame.'
+  tags: [beach, shoreline, film, super-8, no-product, world]
+  product: null
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-photo-099
+  file: photos/zaf-photo-099.jpg
+  type: photo
+  shoot: stock
+  orientation: landscape
+  size_px: [1600, 1067]
+  source_file: desert-dunes_NickFancher_ID5060.jpg
+  original: Emi upload 2026-11-17
+  brand_book_fit: 'Good. Warm desert ripples, abstract. Low resolution limits tight crops.'
+  description: 'Wind ripples across orange desert sand, raking light, abstract. No product.'
+  usage_rule: 'Cleared (Emi, 2026-11-17). Heritage: carousel and story backgrounds, colour field. Max crop about 1000 px wide.'
+  tags: [desert, sand, heritage, texture, no-product, world]
+  product: null
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null

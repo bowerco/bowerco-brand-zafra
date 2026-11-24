@@ -1,0 +1,9 @@
+{
+  "note": "Carousel inside slide: held 4:5 crop with the label and body text system (templates/carousel.md).",
+  "out": "content/drafts/media/<piece>/slide-02.jpg",
+  "size": [1080, 1350],
+  "segments": [{"asset": "zaf-photo-003", "use_master": true, "crop": "1650:2062:205:257"}],
+  "logo": null,
+  "editorial": {"label": "THE THREAD", "body": "Just three threads grow in each bloom, carefully harvested by hand.", "y": 0.07, "top": true, "label_size": 30, "body_size": 30, "col": 0.34, "width": 0.60},
+  "audio": false
+}

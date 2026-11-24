@@ -1,0 +1,387 @@
+#!/usr/bin/env ruby
+# Rule checker for Zafra content (Bower).
+#
+# Reads brand/rules.yaml and assets/index.yaml, then tests every markdown piece
+# in content/drafts/ and content/approved/ (and output/, if present).
+# Files starting with "_" are skipped (reports, notes).
+#
+# Checks: header fields, pillar, em dashes, banned words (incl. health claims,
+# superlatives, cocktail/soda language), pending claims, saffron amount,
+# exclamation marks, emoji, wordmark case, prices (AED, must exist in products/
+# and be under max_age_days old), links (approved only), calls to action,
+# format limits (story set, carousel, giveaway, product and world reels), and asset rules (asset exists, not on hold).
+#
+# Usage: ./check            (exit code 1 if anything fails)
+#        ./check FILE.md    (check one file)
+
+require 'yaml'
+require 'date'
+
+def load_yaml(path)
+  YAML.load_file(path, permitted_classes: [Date, Time, Symbol], aliases: true)
+end
+
+ROOT = File.expand_path(File.dirname(__FILE__))
+RULES = load_yaml(File.join(ROOT, 'brand', 'rules.yaml'))
+EM_DASH = "\u2014"
+
+# ---------- reference data ----------
+ASSET_INDEX = begin
+  y = load_yaml(File.join(ROOT, 'assets', 'index.yaml')) || {}
+  (y['assets'] || []).each_with_object({}) { |a, h| h[a['id']] = a if a['id'] }
+rescue StandardError
+  {}
+end
+
+MAX_PRICE_AGE = (RULES.dig('prices', 'max_age_days') || 30).to_i
+
+# Collect every numeric `price`, with the nearest `valid_as_of` above or beside it.
+def collect_prices(node, out, date = nil)
+  case node
+  when Hash
+    date = node['valid_as_of'] || date
+    node.each do |k, v|
+      if k.to_s == 'price' && v.is_a?(Numeric)
+        out << [v.to_f, date]
+      else
+        collect_prices(v, out, date)
+      end
+    end
+  when Array
+    node.each { |v| collect_prices(v, out, date) }
+  end
+  out
+end
+
+PRICES = Dir.glob(File.join(ROOT, 'products', '*.yaml')).flat_map do |f|
+  collect_prices(load_yaml(f), [])
+end
+
+# ---------- helpers ----------
+def item(rule, line_no, text)
+  { rule: rule, line: line_no, text: text.to_s.strip[0, 120] }
+end
+
+def parse_header(lines)
+  return [nil, 0] unless lines[0] && lines[0].strip == '---'
+
+  close = (1...lines.length).find { |i| lines[i].strip == '---' }
+  return [nil, 0] unless close
+
+  fields = {}
+  (1...close).each do |i|
+    fields[$1] = { value: $2.strip, line: i + 1 } if lines[i] =~ /^(\w+):\s*(.*)$/
+  end
+  result = lines[1...close].find { |l| l =~ /^\s+result:\s*(\S+)/ }
+  fields['_result'] = { value: $1, line: 0 } if result && result =~ /result:\s*(\S+)/
+  [fields, close + 1]
+end
+
+# Copy = words that will be published. Returns [[line_no, text, kind, group]].
+def copy_lines(lines, body_start)
+  out = []
+  group = 'body'
+  in_caption = false
+  in_variants = false
+  lines.each_with_index do |l, i|
+    next if i < body_start
+
+    if l =~ /^##+\s*(.+)/
+      group = $1.strip
+      in_variants = group =~ /variant/i
+      in_caption = group =~ /\Acaption\z/i   # "## Caption" heading layout
+      next
+    end
+    if l =~ /^\*\*Caption:\*\*/
+      in_caption = true
+      next
+    end
+    if in_caption
+      if l.strip.start_with?('>') || l =~ /^\*\*/ || l =~ /^##/
+        in_caption = false
+      elsif !l.strip.empty?
+        kind = l.strip.start_with?('#') ? :hashtags : :caption
+        out << [i + 1, l.strip, kind, 'caption']
+      end
+      next
+    end
+    if l =~ /^\*\*(Text|Headline|Alt text):\*\*\s*(.*)$/
+      out << [i + 1, $2, ($1 == 'Alt text' ? :alt : :frame), group]
+    elsif l =~ /^-?\s*(Headline|Line|On screen|Title|Label):\s*"?([^"]*)"?\s*$/
+      out << [i + 1, $2, :overlay, group]
+    elsif l =~ /^-?\s*Body:\s*"?([^"]*)"?\s*$/
+      out << [i + 1, $1, :body, group]
+    elsif l =~ /Overlay:\s*"([^"]+)"/ || l =~ /Script heading:\s*"([^"]+)"/ || l =~ /Text:\s*"([^"]+)"/
+      out << [i + 1, $1, :overlay, group]
+    elsif in_variants && l =~ /^-\s*"([^"]+)"/
+      out << [i + 1, $1, :frame, group]
+    end
+  end
+  out
+end
+
+def words(text)
+  text.gsub(/[*_#]/, ' ').split(/\s+/).reject { |w| w.empty? || w =~ /\A[:;!?,.]\z/ }.length
+end
+
+EMOJI_RE = /\p{Extended_Pictographic}/
+
+# ---------- checks ----------
+def check_file(path)
+  lines = File.readlines(path, encoding: 'UTF-8').map(&:chomp)
+  fields, body_start = parse_header(lines)
+  f = []
+
+  # header
+  (RULES['required_header'] || []).each do |k|
+    if fields.nil? || !fields.key?(k) || fields[k][:value].empty?
+      f << item("missing header field: #{k}", 1, '(header)')
+    end
+  end
+  return [f, fields] if fields.nil?
+
+  pillar = fields.dig('pillar', :value).to_s
+  allowed_pillars = RULES.dig('pillars', 'allowed') || []
+  if !pillar.empty? && !allowed_pillars.include?(pillar)
+    f << item("unknown pillar \"#{pillar}\"", fields['pillar'][:line], pillar)
+  end
+
+  # assets
+  assets = fields.dig('assets_used', :value).to_s.delete('[]').split(',').map(&:strip).reject(&:empty?)
+  assets.each do |id|
+    a = ASSET_INDEX[id]
+    if a.nil?
+      f << item("asset not in assets/index.yaml: #{id}", fields['assets_used'][:line], id)
+      next
+    end
+    rule = a['usage_rule'].to_s
+    f << item("asset on hold: #{id}", fields['assets_used'][:line], rule) if rule.include?('HOLD')
+    rel = a['path'] || File.join('assets', a['file'].to_s)
+    unless File.exist?(File.join(ROOT, rel))
+      f << item("asset file missing: #{rel}", fields['assets_used'][:line], id)
+    end
+    if rule =~ /do not reuse/i
+      f << item("asset marked do not reuse: #{id}", fields['assets_used'][:line], rule)
+    end
+  end
+
+  # em dash: whole file
+  if (RULES.dig('punctuation', 'never_use') || []).include?('em_dash')
+    lines.each_with_index { |l, i| f << item('never use em dashes', i + 1, l) if l.include?(EM_DASH) }
+  end
+
+  copy = copy_lines(lines, body_start)
+  text_copy = copy.reject { |c| c[2] == :hashtags }
+
+  # banned words
+  (RULES.dig('words', 'never_use') || []).each do |w|
+    # Entries are word starts: "depress" also catches depression, depressed.
+    re = Regexp.new("(?<![[:alpha:]])#{Regexp.escape(w)}[[:alpha:]]*", Regexp::IGNORECASE)
+    text_copy.each { |ln, t, _, _| f << item("banned word: \"#{w}\"", ln, t) if t =~ re }
+  end
+
+  # pending claims (not approved yet)
+  (RULES.dig('claims', 'pending') || []).each do |c|
+    text_copy.each { |ln, t, _, _| f << item("claim pending brand approval: \"#{c}\"", ln, t) if t.downcase.tr("\u2019", "'").include?(c.downcase) }
+  end
+
+  # saffron amount
+  (RULES.dig('saffron', 'never_write') || []).each do |c|
+    text_copy.each { |ln, t, _, _| f << item("saffron is #{RULES.dig('saffron', 'mg_per_bottle')} mg, not \"#{c}\"", ln, t) if t.downcase.include?(c.downcase) }
+  end
+
+  # banned hooks (hard NO: overly trendy content)
+  (RULES.dig('hard_nos', 'banned_hooks') || []).each do |h|
+    text_copy.each { |ln, t, _, _| f << item("trendy hook not allowed: \"#{h}\"", ln, t) if t.downcase.include?(h.downcase) }
+  end
+
+  # camera moves while a shot plays (brand/visual.md): checked in shot and slide descriptions
+  moves = RULES.dig('camera', 'never_describe') || []
+  in_notes = false
+  lines.each_with_index do |l, i|
+    next if i < body_start
+    in_notes = l =~ /notes/i if l =~ /^##/
+    next if in_notes
+    moves.each do |mv|
+      f << item("camera move not allowed (hold the frame, cut instead): \"#{mv}\"", i + 1, l) if l.downcase.include?(mv)
+    end
+  end
+
+  # exclamation marks
+  max_ex = RULES.dig('punctuation', 'max_exclamation_marks')
+  if max_ex
+    n = text_copy.sum { |c| c[1].count('!') }
+    f << item("max #{max_ex} exclamation mark(s) per piece, found #{n}", text_copy.first&.first || 1, '') if n > max_ex
+  end
+
+  # emoji
+  allowed_emoji = (RULES.dig('emoji', 'allowed') || []).map { |e| e[0] }
+  text_copy.each do |ln, t, _, _|
+    t.scan(EMOJI_RE).each { |e| f << item("emoji not allowed: #{e}", ln, t) unless allowed_emoji.include?(e) }
+  end
+  frame_max = RULES.dig('emoji', 'max_per_story_frame')
+  cap_max = RULES.dig('emoji', 'max_per_caption')
+  text_copy.group_by { |c| c[3] }.each do |grp, cs|
+    n = cs.sum { |c| c[1].scan(EMOJI_RE).length }
+    limit = grp == 'caption' ? cap_max : frame_max
+    f << item("too many emoji in #{grp} (#{n}, max #{limit})", cs.first[0], '') if limit && n > limit
+  end
+
+  # wordmark case
+  wm = RULES.dig('wordmark', 'text').to_s
+  if RULES.dig('wordmark', 'case') == 'as_written' && !wm.empty?
+    text_copy.each do |ln, t, _, _|
+      t.scan(/(?<![[:alpha:]])#{Regexp.escape(wm)}(?![[:alpha:]])/i).each do |m|
+        next if m == wm || (m == wm.upcase && t == t.upcase)
+
+        f << item("wordmark must be written \"#{wm}\"", ln, t)
+      end
+    end
+  end
+
+  # prices
+  text_copy.each do |ln, t, _, _|
+    t.scan(/AED\s?(\d+(?:\.\d+)?)/i).flatten.each do |p|
+      hit = PRICES.find { |v, _| v == p.to_f }
+      if hit.nil?
+        f << item("price AED #{p} not found in products/", ln, t)
+      elsif hit[1].nil? || (Date.today - Date.parse(hit[1].to_s)).to_i > MAX_PRICE_AGE
+        f << item("price AED #{p} is older than #{MAX_PRICE_AGE} days (valid_as_of #{hit[1]}): re-check before use", ln, t)
+      end
+    end
+    f << item('write prices as "AED 24.64"', ln, t) if t =~ /(\$\s?\d|\d\s?(dhs?|dirhams?)\b)/i
+  end
+
+  # links (whole body)
+  approved_links = RULES.dig('links', 'approved') || []
+  lines.each_with_index do |l, i|
+    next if i < body_start
+
+    l.scan(%r{https?://[^\s)`"]+}).each do |u|
+      f << item("link not approved: #{u}", i + 1, l) unless approved_links.include?(u)
+    end
+  end
+
+  # CTA + format limits
+  approved_ctas = RULES.dig('calls_to_action', 'approved') || []
+  cta_pending = approved_ctas.empty?   # no approved CTAs yet: waiting on the brand, not a fail
+  fmt = fields.dig('format', :value).to_s.downcase
+  limits = RULES['format_limits'] || {}
+
+  allowed_formats = RULES['formats'] || []
+  unless allowed_formats.empty? || allowed_formats.include?(fmt)
+    f << item("format must be one of: #{allowed_formats.join(', ')}", fields.dig('format', :line) || 1, fmt)
+  end
+
+  if fmt == 'story set'
+    stickers = []
+    lines.each_with_index { |l, i| stickers << [i + 1, $1] if l =~ /link "([^"]+)"/ }
+    f << item('missing call to action (no link sticker)', lines.length, '') if stickers.empty? && fields.dig('set_type', :value).to_s != 'lifestyle'
+    stickers.each { |ln, s| f << item("unapproved call to action: \"#{s}\"", ln, s) unless cta_pending || approved_ctas.include?(s) }
+
+    frames = lines.each_index.select { |i| lines[i] =~ /^##\s*Frame/i }
+    mn = limits.dig('story', 'min_frames')
+    mx = limits.dig('story', 'max_frames')
+    f << item("story set needs #{mn} to #{mx} frames, found #{frames.length}", (frames.first || 0) + 1, '') if (mn && frames.length < mn) || (mx && frames.length > mx)
+    mw = limits.dig('story', 'max_words_per_frame')
+    if mw
+      copy.select { |c| %i[frame overlay].include?(c[2]) }.group_by { |c| c[3] }.each do |grp, cs|
+        n = cs.sum { |c| words(c[1]) }
+        f << item("#{grp}: max #{mw} words, found #{n}", cs.first[0], cs.map { |c| c[1] }.join(' / ')) if n > mw
+      end
+    end
+  end
+
+  if %w[carousel giveaway product\ reel world\ reel].include?(fmt)
+    cap = copy.select { |c| c[3] == 'caption' }
+    cap_lines = cap.select { |c| c[2] == :caption }
+    if cap.empty?
+      f << item('missing caption', lines.length, '')
+    else
+      unless cta_pending || cap_lines.any? { |c| approved_ctas.any? { |a| c[1].include?(a) } }
+        f << item('missing approved call to action in caption', cap.first[0], '')
+      end
+      ml = limits.dig('feed', 'max_caption_lines')
+      f << item("caption max #{ml} lines before hashtags, found #{cap_lines.length}", cap.first[0], '') if ml && cap_lines.length > ml
+      mh = limits.dig('feed', 'max_hashtags')
+      tags = cap.select { |c| c[2] == :hashtags }.sum { |c| c[1].scan(/#\S+/).length }
+      f << item("max #{mh} hashtags, found #{tags}", cap.last[0], '') if mh && tags > mh
+    end
+  end
+
+  if fmt.end_with?('reel')
+    kind = fmt.split.first
+    mn = limits.dig('reel', kind, 'min_seconds')
+    mx = limits.dig('reel', kind, 'max_seconds')
+    d = fields.dig('duration_s', :value).to_s.to_f
+    if d.zero?
+      f << item('missing header field: duration_s', 1, '(header)')
+    elsif (mx && d > mx) || (mn && d < mn)
+      f << item("#{fmt} length #{mn} to #{mx} s, found #{d}", fields['duration_s'][:line], '')
+    end
+    if kind == 'product' && copy.any? { |c| c[2] == :overlay }
+      f << item('product reel has no text on screen (the label is the branding)', copy.find { |c| c[2] == :overlay }[0], '')
+    end
+  end
+
+  if %w[carousel giveaway].include?(fmt)
+    slide_idx = lines.each_index.select { |i| lines[i] =~ /^##\s*Slide\s*\d+/i }
+    mn = limits.dig('carousel', 'min_slides')
+    mx = limits.dig('carousel', 'max_slides')
+    f << item("#{fmt} needs #{mn} to #{mx} slides (## Slide N), found #{slide_idx.length}", (slide_idx.first || 0) + 1, '') if (mn && slide_idx.length < mn) || (mx && slide_idx.length > mx)
+    if fmt == 'carousel'
+      mv = limits.dig('carousel', 'min_video_slides')
+      vids = slide_idx.count { |i| lines[i] =~ /video/i }
+      f << item("carousel needs at least #{mv} video slide (mark it in the heading: ## Slide 2 (video))", (slide_idx.first || 0) + 1, '') if mv && vids < mv
+    end
+    mo = limits.dig('carousel', 'max_overlay_words')
+    copy.select { |c| c[2] == :overlay }.each { |ln, t, _, _| f << item("title or label max #{mo} words, found #{words(t)}", ln, t) if mo && words(t) > mo }
+    mb = limits.dig('carousel', 'max_body_words')
+    copy.select { |c| c[2] == :body }.each { |ln, t, _, _| f << item("body text max #{mb} words, found #{words(t)}", ln, t) if mb && words(t) > mb }
+  end
+
+  f << :cta_pending if cta_pending
+  [f, fields]
+end
+
+# ---------- run ----------
+files = if ARGV.any?
+          ARGV.map { |a| File.expand_path(a) }
+        else
+          %w[content/drafts content/approved output].flat_map do |d|
+            Dir.glob(File.join(ROOT, d, '*.md'))
+          end.reject { |p| File.basename(p).start_with?('_') }.sort
+        end
+
+if files.empty?
+  puts 'No content files found.'
+  exit 0
+end
+
+pass = 0
+fail_count = 0
+waiting = 0
+files.each do |path|
+  failures, fields = check_file(path)
+  pending = failures.delete(:cta_pending)
+  fields ||= {}
+  fields['_result'] = { value: 'BLOCKED' } if pending
+  puts path.sub("#{ROOT}/", '')
+  if failures.empty?
+    pass += 1
+    if fields && fields.dig('_result', :value) == 'BLOCKED'
+      waiting += 1
+      puts "  PASS (rules) · still BLOCKED: #{pending ? 'no approved calls to action yet (_gaps.md)' : 'see rules_check in the file'}"
+    else
+      puts '  PASS'
+    end
+  else
+    fail_count += 1
+    puts '  FAIL'
+    failures.each { |x| puts "    - #{x[:rule]} (line #{x[:line]}): \"#{x[:text]}\"" }
+  end
+  puts
+end
+
+puts "#{pass} passed (#{waiting} still waiting on a human answer), #{fail_count} failed, out of #{files.length} files."
+exit(fail_count.zero? ? 0 : 1)

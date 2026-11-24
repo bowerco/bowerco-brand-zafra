@@ -1,0 +1,21 @@
+name: Brand rules check
+
+# Runs ./check on every push and pull request.
+# A red X means a draft breaks a rule in brand/rules.yaml: open the run to see which line.
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+      - name: Run brand rules check
+        run: ruby ./check

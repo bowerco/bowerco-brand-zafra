@@ -1,0 +1,8 @@
+{
+  "note": "World reel: camel caravan crossing the sun, held centre crop, cream logo centred.",
+  "out": "content/drafts/media/<piece>/r2-desert-camels.mp4",
+  "size": [1080, 1920],
+  "segments": [{"asset": "zaf-video-042", "in": 4.0, "out": 12.0, "crop": "608:1080:656:0"}],
+  "logo": {"file": "zafra-logo-cream.svg", "width": 500, "y": 0.5, "on": "all"},
+  "audio": false
+}

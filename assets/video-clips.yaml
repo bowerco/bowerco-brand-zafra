@@ -1,0 +1,229 @@
+# assets/video-clips.yaml
+# Timestamped moments in assets/video/, so a session picks a held frame without guessing.
+# Built 2026-11-20 from 4 sampled frames per clip plus a camera-motion check.
+#
+# camera:   locked  = tripod or near-still: good postcard as is
+#           drift   = small handheld drift: OK once cropped; try `stabilize: true` in the recipe and check the result
+#           moving  = the camera follows or pushes in: use only the segment given, or not as a postcard
+# postcard: true = can carry an R1 postcard (something moves on its own, frame can be held)
+# master:   a higher-resolution source exists (use it for tight crops)
+# Timestamps are approximate: check in an editor or a test render before cutting.
+
+videos:
+  # ------------------------------------------------------------ denim walk (iPhone)
+  - id: zaf-video-001
+    camera: moving
+    postcard: false
+    clips:
+      - { in: "00:10", out: "00:18", content: "from behind: flower patch on the back pocket, tan bag of bottles", note: "Camera follows the walker. Use only as a cut-in, 2 to 3 s, held crop on the bag." }
+    master: "4K original IMG_3759.MOV (Emi's local download)"
+  - id: zaf-video-002
+    camera: moving
+    postcard: false
+    clips:
+      - { in: "00:01", out: "00:06", content: "side angle along a stone facade, bag of bottles" }
+  - id: zaf-video-003
+    camera: moving
+    postcard: false
+    clips:
+      - { in: "00:02", out: "00:08", content: "walking past doors, bag of bottles" }
+  - id: zaf-video-004
+    camera: moving
+    postcard: false
+    clips:
+      - { in: "00:02", out: "00:11", content: "bag of bottles swinging at the hip, patch visible" }
+
+  # ------------------------------------------------------------ beach (iPhone)
+  - id: zaf-video-005
+    camera: drift
+    postcard: true
+    clips:
+      - { in: "00:03", out: "00:07", content: "wave washes in from the top, bottle on sand, long shadow", note: "Same set-up as 007. Ask for the 4K original (IMG_6639) for tight crops." }
+  - id: zaf-video-006
+    camera: drift
+    postcard: true
+    clips:
+      - { in: "00:02", out: "00:07", content: "wave reaches the bottle, bottle half in shadow", note: "Ask for the 4K original (IMG_6650)." }
+  - id: zaf-video-007
+    camera: locked
+    postcard: true
+    master: "assets/video/masters/zaf-video-007-4k.mp4 (IMG_6651, 2160x3840)"
+    clips:
+      - { in: "00:01", out: "00:09.5", content: "the whole moment: dry sand, wave in at about 3.5 s, recedes", note: "Emi's reference clip. Six held crops in assets/reuse-ideas.md." }
+      - { in: "00:03.3", out: "00:04.5", content: "foam line sweeps across the label", note: "Best single beat for R2 cuts." }
+  - id: zaf-video-035
+    camera: moving
+    postcard: false
+    clips:
+      - { in: "00:00", out: "00:01.5", content: "sea foam over sand, bottle tumbling in the water", note: "Texture or a 1 s cut only. The camera swings away after." }
+
+  # ------------------------------------------------------------ pool (iPhone)
+  - id: zaf-video-030
+    camera: moving
+    postcard: true
+    clips:
+      - { in: "00:01", out: "00:07", content: "two bottles on a stone pool ledge, turquoise water rippling behind", note: "Hold the first part; the camera pushes in near the end. Yellow item beside the bottles: confirm before use (_gaps.md 40)." }
+  - id: zaf-video-031
+    camera: moving
+    postcard: true
+    clips:
+      - { in: "00:01", out: "00:06", content: "same ledge, labels facing camera, water moving", note: "Crop tight on the labels to cut out the yellow item." }
+  - id: zaf-video-032
+    camera: moving
+    postcard: true
+    clips:
+      - { in: "00:01", out: "00:05", content: "same ledge, lower angle", note: "Crop tight on the labels." }
+
+  # ------------------------------------------------------------ hands (iPhone)
+  - id: zaf-video-033
+    camera: drift
+    postcard: true
+    clips:
+      - { in: "00:00", out: "00:04.5", content: "hands lift two bottles toward camera against a white linen skirt, labels big", note: "The movement is the hands, not the camera: do not stabilise (tested, it tracks the hands). Crop on the labels." }
+  - id: zaf-video-034
+    camera: drift
+    postcard: true
+    clips:
+      - { in: "00:00", out: "00:04", content: "same, bottles turned, sunlight on the glass" }
+
+  # ------------------------------------------------------------ factory, Italy
+  - id: zaf-video-008
+    camera: locked
+    postcard: true
+    clips: [{ in: "00:00", out: "00:06", content: "filling carousel turning, bottles passing", pillar: heritage-not-hype }]
+  - id: zaf-video-009
+    camera: locked
+    postcard: true
+    clips: [{ in: "00:00", out: "00:08", content: "bottles with red caps leaving the filler", pillar: heritage-not-hype, note: "Crop to the red caps to warm it up." }]
+  - id: zaf-video-010
+    camera: locked
+    postcard: true
+    clips: [{ in: "00:00", out: "00:05", content: "filler, red caps passing in the foreground", pillar: heritage-not-hype }]
+  - id: zaf-video-011
+    camera: moving
+    postcard: false
+    clips: [{ in: "00:00", out: "00:04", content: "empty bottles entering the filler behind glass" }]
+  - id: zaf-video-012
+    camera: locked
+    postcard: true
+    clips: [{ in: "00:00", out: "00:05", content: "close-up: bottles filling, saffron-coloured liquid", pillar: heritage-not-hype, note: "Best 'Zafra in glass' moment from the line." }]
+  - id: zaf-video-013
+    camera: drift
+    postcard: true
+    clips: [{ in: "00:00", out: "00:07", content: "bottles filling, close", pillar: heritage-not-hype }]
+  - id: zaf-video-014
+    camera: drift
+    postcard: true
+    clips: [{ in: "00:00", out: "00:08", content: "single bottle filling, tight", pillar: heritage-not-hype }]
+  - id: zaf-video-015
+    camera: locked
+    postcard: true
+    clips: [{ in: "00:00", out: "00:10", content: "capping machine, wide", pillar: heritage-not-hype }]
+  - id: zaf-video-016
+    camera: moving
+    postcard: false
+    clips: [{ in: "00:00", out: "00:07", content: "capping machine, wide (camera moves at the end)" }]
+  - id: zaf-video-017
+    camera: drift
+    postcard: true
+    clips: [{ in: "00:00", out: "00:08", content: "capping machine, wide" }]
+  - id: zaf-video-018
+    camera: locked
+    postcard: true
+    clips: [{ in: "00:00", out: "00:15", content: "capped bottles moving down the conveyor, long view", pillar: heritage-not-hype, note: "Crop the lower half: a river of red caps." }]
+  - id: zaf-video-019
+    camera: moving
+    postcard: false
+    clips: [{ in: "00:00", out: "00:04", content: "capped bottles on the conveyor, close (camera pans after)" }]
+  - id: zaf-video-020
+    camera: drift
+    postcard: true
+    clips: [{ in: "00:00", out: "00:05", content: "empty glass bottles on the conveyor" }]
+  - id: zaf-video-021
+    camera: moving
+    postcard: false
+    clips: [{ in: "00:00", out: "00:03", content: "empty glass bottles, close" }]
+  - id: zaf-video-022
+    camera: locked
+    postcard: true
+    clips: [{ in: "00:00", out: "00:10", content: "empty glass bottles streaming past, close", note: "Clean, almost abstract glass: good F2 slide." }]
+  - id: zaf-video-023
+    camera: locked
+    postcard: true
+    clips: [{ in: "00:00", out: "00:06", content: "single filled bottle in capping station 13, saffron glow", pillar: heritage-not-hype, note: "The strongest single-bottle factory frame." }]
+  - id: zaf-video-024
+    camera: drift
+    postcard: true
+    clips: [{ in: "00:00", out: "00:05", content: "sea of red zafra caps on the conveyor", pillar: heritage-not-hype, note: "Crop into the caps so the wordmark on each cap reads. Check for drift before using the full length." }]
+  - id: zaf-video-025
+    camera: locked
+    postcard: true
+    clips: [{ in: "00:00", out: "00:08", content: "bottle passing through the labeller, label goes on", pillar: heritage-not-hype }]
+  - id: zaf-video-026
+    camera: drift
+    postcard: true
+    clips: [{ in: "00:00", out: "00:12", content: "labelled bottles rushing past, motion blur", note: "Abstract colour: crop on the label stripe." }]
+  - id: zaf-video-027
+    camera: drift
+    postcard: true
+    clips: [{ in: "00:00", out: "00:12", content: "labelled bottles rushing past, close, motion blur" }]
+  - id: zaf-video-028
+    camera: locked
+    postcard: true
+    clips: [{ in: "00:04", out: "00:11", content: "packing machine: red Zafra cartons arrive and fill", pillar: heritage-not-hype, note: "Landscape: crop a 9:16 window on the cartons." }]
+  - id: zaf-video-029
+    camera: locked
+    postcard: false
+    clips: [{ in: "00:00", out: "00:02", content: "four-pack carton folded, zafra on the flap", note: "2 s: a cut, not a postcard." }]
+  - id: zaf-video-036
+    camera: moving
+    postcard: false
+    clips: [{ in: "00:00", out: "00:10", content: "filling and capping line, wide (camera moves later)" }]
+  - id: zaf-video-037
+    camera: drift
+    postcard: true
+    clips: [{ in: "00:00", out: "00:15", content: "capped bottles leaving the filler on the conveyor", pillar: heritage-not-hype }]
+  - id: zaf-video-038
+    camera: drift
+    postcard: true
+    clips: [{ in: "00:00", out: "00:15", content: "empty glass bottles on the conveyor" }]
+  - id: zaf-video-039
+    camera: moving
+    postcard: false
+    clips: [{ in: "00:02", out: "00:08", content: "bottles through the capper and labeller" }]
+  - id: zaf-video-040
+    camera: locked
+    postcard: true
+    clips: [{ in: "00:07", out: "00:12", content: "packing machine: red Zafra carton moves through", pillar: heritage-not-hype }]
+
+  # ------------------------------------------------------------ world (stock, cleared)
+  - id: zaf-video-041
+    camera: moving
+    postcard: false
+    clips: [{ in: "00:00", out: "00:06", content: "8mm film of sunlit water caustics, frame edges visible", note: "Texture or background only. Grade warm." }]
+  - id: zaf-video-042
+    camera: locked
+    postcard: true
+    clips:
+      - { in: "00:04", out: "00:12", content: "camel caravan in silhouette crossing the setting sun", pillar: heritage-not-hype, note: "Crop the centre 9:16 (x 656). Tested: content/drafts/media/reel-postcard-tests/postcard-camels.mp4" }
+  - id: zaf-video-043
+    camera: moving
+    postcard: true
+    clips:
+      - { in: "00:00", out: "00:03", content: "crocus close-up, purple blooms with red threads", pillar: saffron-explained, note: "The camera pulls back after 3 s: use only this segment or the wide end." }
+      - { in: "00:07", out: "00:10", content: "wide: rows of crocus in a field", pillar: saffron-explained }
+  - id: zaf-video-044
+    camera: locked
+    postcard: true
+    clips: [{ in: "00:00", out: "00:04.5", content: "crocus field, purple blooms moving in the wind", pillar: saffron-explained }]
+  - id: zaf-video-045
+    camera: drift
+    postcard: true
+    master: video/masters/zaf-video-045-4k.mp4
+    clips:
+      - { in: "00:00", out: "00:09", content: "sun low over the sea, waves breaking toward camera, the sun's path on the water", pillar: modern-ritual, note: "Handheld drift at the waterline: crop tight from the 4K master (e.g. 1080:1920 around the sun path) and check the hold. Beach season R2." }
+  - id: zaf-video-046
+    camera: locked
+    postcard: true
+    clips:
+      - { in: "00:00", out: "00:06", content: "Super 8 film of a pale shoreline, small waves running in", pillar: modern-ritual, note: "Crop inside the film frame (edges visible). Soft and pale: pair with a cream logo only where contrast holds, else yellow." }

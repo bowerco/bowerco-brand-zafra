@@ -1,0 +1,34 @@
+# products/where-to-buy.yaml
+# Only stockists listed here may appear in content. Source: Zafra Brand Facts doc
+# (Nov 2026) and links from Emi. TODO: direct product links for every stockist,
+# and which ones carry the four-pack.
+
+valid_as_of: "2026-11-18"
+
+uae:
+  delivery_apps:
+    - name: "Noon (Noon Minutes)"
+      link: "https://minutes.noon.com/uae-en/search/?f%5Btag%5D=EX_CPQEYK9V2E&utm_campaign=EX_CPQEYK9V2E&utm_source=Instagram"
+    - name: "Talabat (Talabat Mart)"
+      link: "https://www.talabat.com/uae/talabat-mart/product/zafra-saffron-rose-water-lemon-soft-drink-190ml/s/940769"
+      note: "Single 190 ml. Listed as a 'Soft Drink' (we never use that term)."
+    - name: "Careem Quick"
+      link: null   # TODO
+  stores:
+    - "Geant"
+    - "Franprix"
+    - "Monoprix"
+    - "Union Coop"
+    - "Choithrams"
+    - "Fresh Market"
+    - "Sharjah Coop"
+
+oman:
+  stores:
+    - "Hypermax"
+    - "Lulu"
+    - "Makkah"
+
+website:
+  url: "https://www.drinkzafra.com/"
+  shop: false   # no online shop or stockist page (2026-11-17)

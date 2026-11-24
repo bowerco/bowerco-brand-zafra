@@ -1,0 +1,234 @@
+# brand/rules.yaml
+# Machine-checkable brand rules only.
+# If it can be validated by code (hex values, exact strings, booleans), it goes here.
+# If it guides how something should be written or felt, it belongs in brand/voice.md
+# or brand/visual.md instead.
+
+# ============================================================================
+# ZAFRA
+# Sources: Zafra Brand Guidelines v1.2 (Nov 2025, "brand book"), colour palette
+# sheet, logo files (SVG/PDF/EPS/PNG), Rubik font files and the Zafra Brand
+# Facts doc (all received Nov 2026).
+# "TODO" = not supplied yet. "confirm" = supplied but inconsistent, see _gaps.md.
+# ============================================================================
+
+colors:
+  # Brand colours, exact HEX from the palette sheet.
+  primary:
+    name: "Zafra Red"
+    hex: "#F5471C"        # CMYK 0 85 100 0 · RGB 245 71 28 · Pantone 3556 U / 3556 C
+  secondary:
+    name: "Soft Cream"
+    hex: "#FFF9DA"        # CMYK 0 2 15 0 · RGB 255 249 218 · Pantone 7499 U / C (approx). confirm: logo files use #FFF9E5
+  background:
+    name: "Soft Cream"
+    hex: "#FFF9DA"
+  text:
+    default: "#B50029"    # Zafra Deep Red (Bower readability choice). confirm: brand book RGB 180 0 41 = #B40029
+    secondary: "#94167E"  # Royal Saffron Violet
+  usage:                  # brand book: one lead hue per asset, at most one soft accent
+    max_lead_hues_per_asset: 1
+    max_soft_accents_per_asset: 1
+    zero_sugar_background: "#FFC13C"
+  accents:
+    deep_red:     { name: "Zafra Deep Red",       hex: "#B50029" }   # Pantone 207 U / C
+    violet:       { name: "Royal Saffron Violet", hex: "#94167E" }   # Pantone 2602 U / C
+    magenta:      { name: "Magenta Bloom",        hex: "#D44AB6" }   # Pantone Purple U / C (alt 2395 C)
+    saffron_glow: { name: "Saffron Glow",         hex: "#FFC13C" }   # Pantone 123 U / C
+    petal_mist:   { name: "Petal Mist",           hex: "#FFF0FF" }   # Pantone 706 U / C (approx)
+    leaf:         { name: "Leaf Accent",          hex: "#D2FF75" }   # Pantone 387 U / C (approx)
+  allowed_hex: ["#F5471C", "#B50029", "#94167E", "#D44AB6", "#FFC13C", "#FFF9DA", "#FFF0FF", "#D2FF75", "#FFFFFF"]
+  # Text/background pairs that pass for body copy (WCAG 4.5:1 or better).
+  body_text_pairs:
+    - { text: "#B50029", on: "#FFF9DA" }   # 6.6:1
+    - { text: "#94167E", on: "#FFF9DA" }   # 7.4:1
+    - { text: "#B50029", on: "#FFF0FF" }   # 6.4:1
+    - { text: "#94167E", on: "#FFF0FF" }   # 7.2:1
+    - { text: "#FFF9DA", on: "#B50029" }   # 6.6:1
+    - { text: "#FFF9DA", on: "#94167E" }   # 7.4:1
+    - { text: "#94167E", on: "#FFC13C" }   # 4.8:1
+    - { text: "#94167E", on: "#D2FF75" }   # 6.8:1
+  large_text_only_pairs:   # headlines 24px and up only
+    - { text: "#F5471C", on: "#FFF9DA" }   # 3.4:1
+    - { text: "#FFF9DA", on: "#F5471C" }   # 3.4:1
+    - { text: "#D44AB6", on: "#FFF9DA" }   # 3.6:1
+  onscreen_text: ["#FFF9DA", "#FFFFFF"]   # every word on screen: cream or white only (Emi, 2026-11-20)
+  never_pair:
+    - { text: "#F5471C", on: "#FFC13C" }   # 2.2:1
+
+fonts:
+  heading:
+    family: "Euclid Flex"   # brand book: headlines, short leads, buttons, labels
+    files: "assets/fonts/euclid-flex-TRIAL/EuclidFlexTRIAL-<Weight>.otf"
+    license: "TRIAL"        # testing only: nothing made with it may be published or sent out. Swap for licensed files.
+    weights: ["Light", "Regular", "Medium", "SemiBold", "Bold"]
+    case: "uppercase"       # ALL CAPS for every headline, title and button
+    fallback: "Rubik"       # web build only, until Euclid Flex is licensed
+  body:
+    family: "Acumin Variable Concept"   # brand book: body, long reads, small text, UI. Adobe Fonts. Files: TODO
+    fallback: "Rubik"
+  arabic:
+    heading: "29LT Bukra"
+    body: "Rubik"           # files in assets/fonts/ (OFL). Our content is English only.
+  layout:
+    max_headline_sizes: 1
+    max_text_sizes: 1
+
+wordmark:
+  text: "Zafra"            # in copy: capital Z. The logo is lowercase script; never retype it in a font.
+  case: "as_written"       # "Zafra" in sentences; "ZAFRA" only inside an all-caps line
+  primary_colors: ["#FFF9E5", "#FFC23D", "#FFFFFF"]   # cream / bright yellow (and white): default, and the only versions allowed on photos, video, motion
+  secondary_colors: ["#F5471C"]                      # red: only on bright/light grounds (incl. Saffron Glow); never on imagery, dark or saturated grounds
+  allowed_colors: ["#F5471C", "#FFF9E5", "#FFC23D", "#FFFFFF"]
+  red_on_imagery: false
+  files:
+    primary_cream: "logos/zafra-logo-cream.svg"
+    primary_yellow: "logos/zafra-logo-saffron-glow.svg"
+    primary_lockup: "logos/zafra-logo-primary-cream-on-red.svg"
+    secondary_red: "logos/zafra-logo-red.svg"
+    secondary_lockup: "logos/zafra-logo-secondary-red-on-cream.svg"
+    white: "logos/zafra-logo-white.svg"
+  clear_space: "1x capital Z height (fallback 0.5x, never less)"
+  min_width_px: 120
+  min_width_mm: 18
+  petal_marque: "TODO: file not supplied. Companion graphic only, never locked to the wordmark."
+
+tagline:
+  text: "Your new mindful indulgence"   # exact wording
+
+origin_line:
+  text: "Born in Dubai, produced in Italy."   # keep intact; place near the pack or product name
+
+saffron:
+  mg_per_bottle: 36        # locked (Emi, 2026-11-17). The ingredient list's 38mg is never used.
+  never_write: ["38 mg", "38mg"]
+
+claims:
+  approved: ["Naturally uplifting", "Your new mindful indulgence", "36 mg of saffron"]
+  pending:                 # blocked by ./check until Zafra approves in writing (_gaps.md)
+    - "world's first"
+    - "worlds first"
+    - "first saffron drink"
+    - "only drink"
+    - "studies suggest"
+
+language: "en"             # English only (confirmed Nov 2026)
+markets: ["UAE", "Oman"]     # where Zafra is sold (brand/facts.md)
+handle: "@drinkzafra"       # same on all socials
+
+punctuation:
+  never_use:
+    - em_dash              # Bower house default. TODO: confirm with Zafra
+  max_exclamation_marks: 1
+
+emoji:
+  allowed: []              # Bower default until Zafra says otherwise
+  max_per_story_frame: 0
+  max_per_caption: 0
+
+prices:
+  currency: "AED"
+  format: "AED 24.64"
+  max_age_days: 30         # a price older than this can't be used
+
+pillars:
+  allowed: ["quiet-saffron-luxury", "modern-ritual", "saffron-explained", "where-to-find-us", "heritage-not-hype"]
+
+links:
+  approved:
+    - "https://www.drinkzafra.com/"
+    - "https://minutes.noon.com/uae-en/search/?f%5Btag%5D=EX_CPQEYK9V2E&utm_campaign=EX_CPQEYK9V2E&utm_source=Instagram"
+    - "https://www.talabat.com/uae/talabat-mart/product/zafra-saffron-rose-water-lemon-soft-drink-190ml/s/940769"
+
+people:
+  allowed_names: []        # no names in copy
+  faces: "ok"              # everyone in the library is cleared (Emi, 2026-11-17)
+
+words:
+  # Health claims: Zafra is functional, not medicinal, and its marketing must not
+  # make specific health claims (brand instruction, Brand Facts doc 2026-11-18).
+  # The checker matches word starts, so "depress" also catches depression, depressed.
+  never_use:
+    - antidepress
+    - anti-depress
+    - clinical
+    - depress
+    - anxiet
+    - anxious
+    - dose
+    - dosage
+    - medicinal
+    - medicine
+    - medical
+    - prescri
+    - therap
+    - treatment
+    - cured
+    - cures
+    - disease
+    - symptom
+    - remedy
+    - remedies
+  # Brand book: no functional claims, no superlatives, never a mixer.
+    - energy
+    - boost
+    - performance
+    - cocktail
+    - mocktail
+    - mixer
+    - syrup
+    - soda
+    - best drink
+    - the best
+    - high quality
+    - high-quality
+    - premium quality
+    - finest
+    - world-class
+    - spritz
+    - mix into
+    - mixed with
+    - soft drink
+    - zero sugar           # not confirmed as launched (_gaps.md 35)
+    - sugar-free
+    - golden colo
+    - red colo
+
+calls_to_action:
+  # TODO: Zafra to approve (_gaps.md 15). While empty, ./check marks pieces BLOCKED, not FAIL.
+  # Bower proposals: "Order on Talabat or Noon." / "Find Zafra on Talabat and Noon." /
+  # "Order now" (story link sticker) / "Shop Zafra" (story link sticker)
+  approved: []
+
+# ============================================================================
+# SYSTEM DEFAULTS: generic structural rules the checker depends on to test
+# each format. Keep the same shape (the checker reads these exact keys).
+# ============================================================================
+
+camera:
+  # Held frames (brand/visual.md, Emi 2026-11-19). ./check flags these in shot and slide descriptions.
+  never_describe: ["push in", "push into", "push-in", "zoom in", "zoom out", "zooms in", "slow zoom", "ken burns", "pan across", "pans across", "tilt down", "tilt up", "dolly", "pull back", "pulls back", "handheld", "full frame", "full-frame"]
+
+required_header: ["id", "title", "pillar", "format", "template", "date", "status", "assets_used", "rules_check"]
+
+# The five formats (templates/). Every piece names one in `format:`.
+formats: ["product reel", "world reel", "carousel", "story set", "giveaway"]
+
+format_limits:
+  story:                   # templates/story.md
+    max_words_per_frame: 6 # one short line per frame
+    min_frames: 3
+    max_frames: 5
+  feed:                    # captions for carousels, reels and giveaways
+    max_caption_lines: 5   # before hashtags
+    max_hashtags: 3
+  carousel:                # templates/carousel.md (giveaways use the same limits)
+    min_slides: 4
+    max_slides: 6
+    min_video_slides: 1    # not required for giveaways
+    max_overlay_words: 6   # cover title and slide labels
+    max_body_words: 35     # body text beside a label
+    video_max_seconds: 20
+  reel:                    # templates/reel.md
+    product: { min_seconds: 7, max_seconds: 11 }
+    world:   { min_seconds: 6, max_seconds: 12 }

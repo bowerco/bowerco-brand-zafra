@@ -1,0 +1,69 @@
+# products/products.yaml
+# One entry per product. Do not invent products or facts, leave TODO where unknown.
+# Sources: Zafra Brand Facts (Google Doc, 2026-11-18) and Brand Guidelines v1.2 (Nov 2025).
+#
+# Schema per product:
+#   id: short unique slug
+#   name: product display name
+#   facts: list of factual claims that can be used in content (ingredients, specs, price, etc.)
+#   images: list of image filenames found in assets/photos/
+
+valid_as_of: "2026-11-18"
+# Where to buy: products/where-to-buy.yaml
+
+products:
+  - id: zafra-saffron
+    name: "Zafra"
+    flavour: "Saffron, Rose Water & Lemon"   # as printed on the label (photos)
+    label_lines: ["NATURALLY UPLIFTING", "SAFFRON", "ROSE WATER & LEMON"]
+    facts:
+      - "Made with genuine saffron, 36 mg per bottle"
+      - "Born in Dubai, produced in Italy"
+      - "Non-alcoholic by design, served neat"
+      - "Taste: lemon, saffron and a hint of rose"
+      - "Best served chilled or over ice"
+    size_ml: 190
+    packs:
+      - id: single
+        name: "Single bottle"
+        units: 1
+        prices:                         # only use if valid_as_of is under 30 days old
+          - channel: talabat
+            currency: AED
+            price: 24.64
+            valid_as_of: "2026-11-17"
+            source: "https://www.talabat.com/uae/talabat-mart/product/zafra-saffron-rose-water-lemon-soft-drink-190ml/s/940769"
+            note: "Delivery-app price, can change daily. RRP: TODO"
+      - id: four-pack
+        name: "Four-pack"
+        units: 4
+        prices: []                      # TODO
+    ingredients: >-
+      Carbonated Water, Sugar, Saffron infusion (38mg/190ml), Lemon juice from
+      concentrate (5%), Rose water, Acidity regulator (citric acid E330),
+      Stabilizer (pectin E440/Gum E466), Natural lemon flavor, Antioxidant
+      (ascorbic acid E300), Color: Natural Identical Beta-carotene (E160ai)
+    saffron_mg_per_bottle: 36          # locked at 36 (Emi, 2026-11-17; website and press agree). Ignore 38mg in the ingredient list.
+    saffron_origin: TODO
+    nutrition_per_100ml:
+      energy_kcal: 42
+      carbohydrates_g: 10.5
+      sugars_g: TODO                   # not supplied
+      fat_g: TODO                      # not supplied
+      fiber_g: 0
+      protein_g: 0
+      salt_g: 0.032
+    claims:                            # dietary claims (vegan, gluten-free, caffeine-free...): none confirmed yet
+      approved: []
+    images: [zaf-photo-001, zaf-photo-002, zaf-photo-004, zaf-photo-005]
+
+  - id: zafra-zero-sugar
+    name: "Zafra Zero Sugar"            # named in the brand book only
+    facts:
+      - "Hero background: Saffron Glow, brighter table settings"
+    size_ml: TODO
+    packs: TODO
+    ingredients: TODO
+    nutrition_per_100ml: TODO
+    images: []
+    status: "TODO: confirm it exists and is on sale before mentioning it"

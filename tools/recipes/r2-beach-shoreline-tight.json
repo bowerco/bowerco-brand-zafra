@@ -1,0 +1,8 @@
+{
+  "note": "World reel reference (Emi's pick, 2026-11-20): zoomed in, label big, the wave reaching the glass. The label is the logo, so no overlay.",
+  "out": "content/drafts/media/<piece>/r2-beach-shoreline-tight.mp4",
+  "size": [1080, 1920],
+  "segments": [{"asset": "zaf-video-007", "use_master": true, "in": 1.0, "out": 9.5, "crop": "900:1600:760:1130"}],
+  "logo": null,
+  "audio": false
+}
