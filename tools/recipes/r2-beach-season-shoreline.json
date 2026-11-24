@@ -1,0 +1,9 @@
+{
+  "note": "World reel, beach season (I-001). New crop: whole bottle in the lower half, label readable, the wave arrives across the top at about 3.5 s. No logo overlay: the label is the logo when the bottle is in frame.",
+  "piece": "content/drafts/world-reel-beach-season.md",
+  "out": "content/drafts/media/world-reel-beach-season/world-reel-beach-season.mp4",
+  "size": [1080, 1920],
+  "segments": [{"asset": "zaf-video-007", "use_master": true, "in": 1.0, "out": 9.5, "crop": "1600:2844:120:330"}],
+  "logo": null,
+  "audio": false
+}

@@ -2847,9 +2847,10 @@ assets:
   master: video/masters/zaf-video-007-4k.mp4
   product: zafra-saffron
   pillar: modern-ritual
-  used_in: []
-  times_used: 0
-  last_used: null
+  used_in:
+  - content/drafts/world-reel-beach-season.md
+  times_used: 1
+  last_used: "2026-11-24"
 - id: zaf-video-008
   file: video/zaf-video-008.mp4
   type: video
@@ -4363,9 +4364,9 @@ assets:
   duration_s: 9.1
   source_file: DTS_PRAIA_Agustin_Farias_Clips_ID208.mp4
   original: Emi upload 2026-11-17
-  brand_book_fit: 'Good. Low sun on the sea, warm, no people. Handheld drift near the waterline.'
+  brand_book_fit: 'Good light, but handheld: the camera tilts up from the water to the horizon and back down. Holds still only from about 4.7 to 8 s.'
   description: 'Sunset over the sea from the waterline, waves breaking, the sun''s path on the water. No product.'
-  usage_rule: 'Cleared (Emi holds rights to all files she shares, 2026-11-17). World reel (R2) and story backgrounds, beach season. Crop 9:16 from the 4K master; hold the crop.'
+  usage_rule: 'Cleared (Emi holds rights to all files she shares, 2026-11-17). Not a world reel (camera moves). Use 4.7 to 8 s only: story frame or carousel lifestyle slide, beach season. Crop 9:16 from the 4K master.'
   tags: [beach, sea, sunset, golden-hour, waves, no-product, world]
   product: null
   pillar: modern-ritual

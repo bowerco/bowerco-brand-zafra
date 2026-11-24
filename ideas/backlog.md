@@ -4,10 +4,10 @@ Status: `new`, `planned`, `drafted`, `done`, or BLOCKED (waiting on a gap). Ever
 
 | ID | Title | Source | Pillar | Format | Status |
 |---|---|---|---|---|---|
-| I-001 | The shoreline: one sand clip, a week of pieces | zaf-video-007 master | P1 / P2 | World reel, story sets, carousel slides | planned |
+| I-001 | The shoreline: one sand clip, a week of pieces | zaf-video-007 master | P1 / P2 | World reel, story sets, carousel slides | drafted (world reel) |
 | I-002 | Stills product reel: label, cap, glass, pour, hero | zaf-photo-001 to 005 masters | P1 | Product reel | planned |
 | I-003 | Product reel, moving: bubbles, threads, lemon, rose water, hero | ASSET NEEDED (studio shoot) | P1 | Product reel | BLOCKED: shoot |
-| I-004 | Sunset sea | zaf-video-045 master | P2 | World reel, story lifestyle | planned |
+| I-004 | Sunset sea | zaf-video-045 master | P2 | Story lifestyle (camera moves: not a world reel) | planned |
 | I-005 | Camels at sunset | zaf-video-042 | P5 | World reel | planned |
 | I-006 | Crocus field in the wind | zaf-video-044 | P3 | World reel | planned |
 | I-007 | Why saffron? | zaf-ig-004, zaf-video-043, zaf-photo-003, 004 | P3 | Carousel (explainer) | planned |

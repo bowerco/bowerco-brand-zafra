@@ -56,8 +56,9 @@ All reels: 1080x1920, 30 fps, held frames only (the frame never moves while a sh
 | Shot | **One** held shot, no cuts |
 | Length | 6 to 12 s |
 | Movement | From the scene only: a wave, wind in sand, camels walking, water light, people passing |
-| Logo | Cream logo file (`zafra-logo-cream.svg`), centred, about half the frame width (440 to 540 px), on for the whole clip |
+| Logo | Only when the bottle is **not** in frame: cream logo file (`zafra-logo-cream.svg`), centred, about half the frame width (440 to 540 px), on for the whole clip. When the bottle is in frame, the label is the logo: no overlay (two wordmarks stacked look wrong, tested 2026-11-24). |
 | Text | None besides the logo |
+| Camera check | Contact-sheet the clip (1 frame a second) before choosing it. If the horizon or subject shifts between frames, it isn't held. |
 
 ### Places
 Beach, desert, city, saffron fields, pool. Clean and slightly abstract. The bottle can appear but often doesn't; when it does, the label is big and readable and the movement is right next to it.

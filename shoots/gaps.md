@@ -21,7 +21,7 @@ The single biggest gap: **moving macros on a plain seamless.** One studio day fi
 | Place | Status | Assets | Note |
 |---|---|---|---|
 | Beach, with bottle | Have | zaf-video-007 (4K master), 005, 006 | Six crops already mapped in `assets/reuse-ideas.md` |
-| Beach, sea and sun | Have | zaf-video-045 (4K master), 046 (Super 8 shoreline), zaf-ig-037 | 045 drifts slightly: crop tight and check the hold |
+| Beach, sea and sun | Partial | zaf-video-045 (4K, holds 3 s only), 046 (Super 8, 5.6 s, jittery), zaf-ig-037 | No held sea shot long enough for a world reel without the bottle. Need: locked 15 s of the sea at golden hour |
 | Desert | Have | zaf-video-042 (camels, locked), zaf-photo-099 (ripples), 100 (dune and sky) | Stills are 1600 px: crops max about 1000 px wide. Still no moving desert shot besides the camels |
 | Saffron fields | Have | zaf-video-043 (0 to 3 s only), 044 | 043 pulls back after 3 s |
 | Water light | Have | zaf-video-041 (caustics) | Texture, or a colour field slide |

@@ -32,6 +32,7 @@ Built from `shoots/gaps.md` (2026-11-24). Two half-days cover everything: a stud
 | # | Shot | Where | Media | For |
 |---|---|---|---|---|
 | 13 | Someone drinking Zafra: pours, sips, sets the glass down. Natural, modest styling | Home, terrace or beach club | Video, locked, 15 to 20 s | Carousel real-person slide |
+| 13b | Locked shot of the sea at golden hour, no product, 15 s (waves, the sun's path) | Beach | Video, locked | World reel |
 | 14 | Held Dubai shot: skyline or old Dubai at golden hour, a doorway, a rooftop. With and without the bottle in the foreground | Dubai | Video, locked, 15 s | World reel city, born-in-Dubai carousel |
 | 15 | A majlis or hosted-table setting with Zafra on its own, glass over ice | Interior | Stills + locked video | Heritage carousel, Ramadan and Eid |
 | 16 | Bottle in a real store fridge or shelf (retailer OK needed) | A UAE stockist | Video, locked | Where-to-find-us stories |

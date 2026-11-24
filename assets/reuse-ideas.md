@@ -15,14 +15,14 @@ The wave arrives top left at about 3.5 s. Tested renders exist for every crop.
 | The cap | 1080:1920:60:1250 | none | R1 cut |
 | Glow and shadow | 1160:2062:1000:1778 | cream in the shadow, y 0.74 | S payoff, G slide 4 |
 | Shoreline wide | 1080:1920:0:300 | cream, y 0.42 | R2, S |
+| **Bottle low, wave above (used: world-reel-beach-season)** | 1600:2844:120:330 | none, the label is the logo | R2 |
 
 ## zaf-video-045: sunset sea (4K master, 3840x2160)
 | Frame | Crop | Best as |
 |---|---|---|
-| Sun path, tall | 1215:2160:1310:0 (9:16) | R2 with cream logo, S lifestyle |
-| Breaking wave, low | 1215:2160:1310:0 from 4 s | S detail |
-| Horizon band | 1728:2160:1050:0 (4:5) | C lifestyle moment |
-Check the hold: handheld drift at the waterline.
+| Sun on the horizon, 4.7 to 8 s | 1215:2160:1310:0 (9:16) | S lifestyle frame |
+| Horizon band, 4.7 to 8 s | 1728:2160:1050:0 (4:5) | C lifestyle moment |
+The camera tilts before 4.7 s and after 8 s: not a world reel.
 
 ## zaf-video-042: camels at sunset (1920x1080)
 | Frame | Crop | Best as |

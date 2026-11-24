@@ -217,14 +217,14 @@ videos:
     postcard: true
     clips: [{ in: "00:00", out: "00:04.5", content: "crocus field, purple blooms moving in the wind", pillar: saffron-explained }]
   - id: zaf-video-045
-    camera: drift
-    postcard: true
+    camera: moving
+    postcard: false
     master: video/masters/zaf-video-045-4k.mp4
     clips:
-      - { in: "00:00", out: "00:09", content: "sun low over the sea, waves breaking toward camera, the sun's path on the water", pillar: modern-ritual, note: "Handheld drift at the waterline: crop tight from the 4K master (e.g. 1080:1920 around the sun path) and check the hold. Beach season R2." }
+      - { in: "00:04.7", out: "00:08", content: "sun on the horizon, waves breaking, the sun's path on the water", pillar: modern-ritual, note: "The camera tilts up from the water before 4.7 s and back down after 8 s. Only this 3 s stretch holds: story frame or carousel slide, not a world reel." }
   - id: zaf-video-046
-    camera: locked
-    postcard: true
+    camera: drift
+    postcard: false
     clips:
       - { in: "00:00", out: "00:06", content: "Super 8 film of a pale shoreline, small waves running in", pillar: modern-ritual, note: "Crop inside the film frame (edges visible). Soft and pale: pair with a cream logo only where contrast holds, else yellow." }
   - id: zaf-ig-042
