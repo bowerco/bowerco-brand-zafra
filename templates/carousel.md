@@ -26,6 +26,8 @@ The same on every slide, so every carousel reads like a page of the same magazin
 - **Inside slides:** a small label (Euclid Flex caps, up to 6 words) and up to 35 words of body (Acumin, sentence case) in a column beside it.
 - **Position:** bottom left by default. Move to wherever the empty space is (top left on a product still).
 - Cream #FFF9DA or white only. One title size, one label size, one body size across the carousel.
+- Trial font: Euclid Flex TRIAL draws ? ! : ; & % and brackets as dots. The render tool fills them from Rubik for drafts.
+- Text needs a deep background (red, violet, dark sand). Pale studio backgrounds (zaf-photo-004 peach) can't carry cream text: pick another source or crop.
 - Every fact in body text comes from `brand/facts.md`, `brand/story.md` or `products/`.
 
 ## Recipes

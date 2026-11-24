@@ -92,7 +92,42 @@ def svg_png(name, width, tmp):
     return out
 
 
-TEXT_COLOURS = {'#FFF9DA', '#FFFFFF'}   # on-screen text is always cream or white (Emi, 2026-11-20)
+TEXT_COLOURS = {'#FFF9DA', '#FFFFFF'}
+# The Euclid Flex TRIAL draws most punctuation as a dot (only . and , work). Until the licensed files arrive,
+# these characters are drawn from Rubik so drafts read correctly.
+TRIAL_MISSING = set('?!:;&%()/+"@#')
+FALLBACK_FONT = os.path.join(ROOT, 'assets/fonts/Rubik-VariableFont_wght.ttf')
+
+
+def _fallback(font):
+    fb = ImageFont.truetype(FALLBACK_FONT, font.size)
+    w = 500 if 'Medium' in font.path or 'Semi' in font.path or 'Bold' in font.path else 400
+    try:
+        fb.set_variation_by_axes([w])
+    except Exception:
+        pass
+    return fb
+
+
+def draw_mixed(d, xy, text, font, fill):
+    """Draw text, swapping in the fallback font for punctuation the trial font lacks. Returns the width."""
+    if 'TRIAL' not in getattr(font, 'path', '') or not (set(text) & TRIAL_MISSING):
+        d.text(xy, text, font=font, fill=fill)
+        return d.textlength(text, font=font)
+    fb = _fallback(font)
+    x, y = xy
+    for ch in text:
+        f = fb if ch in TRIAL_MISSING else font
+        d.text((x, y), ch, font=f, fill=fill)
+        x += d.textlength(ch, font=f)
+    return x - xy[0]
+
+
+def mixed_len(d, text, font):
+    if 'TRIAL' not in getattr(font, 'path', '') or not (set(text) & TRIAL_MISSING):
+        return d.textlength(text, font=font)
+    fb = _fallback(font)
+    return sum(d.textlength(ch, font=fb if ch in TRIAL_MISSING else font) for ch in text)   # on-screen text is always cream or white (Emi, 2026-11-20)
 
 
 def text_png(t, size, tmp):
@@ -110,9 +145,9 @@ def text_png(t, size, tmp):
     for i, l in enumerate(lines):
         if '\u2014' in l:
             sys.exit('No em dashes.')
-        w = d.textlength(l, font=font)
+        w = mixed_len(d, l, font)
         x = margin if align == 'left' else (size[0] - margin - w if align == 'right' else (size[0] - w) / 2)
-        d.text((x, y0 + i * lh), l, font=font, fill=t.get('color', '#FFF9DA'))
+        draw_mixed(d, (x, y0 + i * lh), l, font, t.get('color', '#FFF9DA'))
         boxes.append((int(x), y0 + i * lh, int(x + w), y0 + (i + 1) * lh))
     t['_boxes'] = boxes
     out = os.path.join(tmp, 'text.png')
@@ -140,7 +175,7 @@ def editorial_png(e, size, tmp):
     words, lines, cur = e.get('body', '').split(), [], ''
     for w in words:
         t = (cur + ' ' + w).strip()
-        if d.textlength(t, font=bf) > col_w and cur:
+        if mixed_len(d, t, bf) > col_w and cur:
             lines.append(cur); cur = w
         else:
             cur = t
@@ -154,12 +189,12 @@ def editorial_png(e, size, tmp):
     boxes = []
     if e.get('label'):
         lab = e['label'].upper()
-        d.text((margin, y0), lab, font=lf, fill=col)
-        boxes.append((margin, y0, int(margin + d.textlength(lab, font=lf)), y0 + lh))
+        lw = draw_mixed(d, (margin, y0), lab, lf, col)
+        boxes.append((margin, y0, int(margin + lw), y0 + lh))
     x_body = col_x if e.get('label') else margin
     for i, l in enumerate(lines):
-        d.text((x_body, y0 + i * lh), l, font=bf, fill=col)
-        boxes.append((x_body, y0 + i * lh, int(x_body + d.textlength(l, font=bf)), y0 + (i + 1) * lh))
+        bw = draw_mixed(d, (x_body, y0 + i * lh), l, bf, col)
+        boxes.append((x_body, y0 + i * lh, int(x_body + bw), y0 + (i + 1) * lh))
     e['_boxes'] = boxes
     if bpath != BODY_FONT:
         print('NOTE: body set in Euclid Flex Regular until the Acumin files arrive.')

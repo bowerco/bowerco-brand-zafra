@@ -10,7 +10,7 @@ Status: `new`, `planned`, `drafted`, `done`, or BLOCKED (waiting on a gap). Ever
 | I-004 | Sunset sea | zaf-video-045 master | P2 | Story lifestyle (camera moves: not a world reel) | planned |
 | I-005 | Camels at sunset | zaf-video-042 | P5 | World reel | planned |
 | I-006 | Crocus field in the wind | zaf-video-044 | P3 | World reel | planned |
-| I-007 | Why saffron? | zaf-ig-004, zaf-video-043, zaf-photo-003, 004 | P3 | Carousel (explainer) | planned |
+| I-007 | Why saffron? | zaf-ig-004, zaf-video-043, zaf-photo-003, 004 | P3 | Carousel (explainer) | drafted |
 | I-008 | Zafra Notes: beach season | zaf-video-007, 045, zaf-photo-003, 005 | P2 | Carousel (story) | planned |
 | I-009 | Where to find us: UAE and Oman | zaf-photo-004, zaf-ig-013, beach crops | P4 | Carousel (where to buy), story sets | planned (CTA pending) |
 | I-010 | Born in Dubai, produced in Italy | zaf-photo-099, factory 016, 024, zaf-photo-004 | P5 | Carousel (explainer) | planned (Dubai shot missing: use desert) |

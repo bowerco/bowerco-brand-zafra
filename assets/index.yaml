@@ -480,9 +480,10 @@ assets:
   product: zafra-saffron
   pillar: quiet-saffron-luxury
   master: photos/masters/zaf-photo-003-full.jpg
-  used_in: []
-  times_used: 0
-  last_used: null
+  used_in:
+  - content/drafts/carousel-why-saffron.md
+  times_used: 1
+  last_used: "2026-11-24"
 - id: zaf-photo-004
   file: photos/zaf-photo-004.jpg
   type: photo
@@ -528,9 +529,10 @@ assets:
   product: zafra-saffron
   pillar: quiet-saffron-luxury
   master: photos/masters/zaf-photo-005-full.jpg
-  used_in: []
-  times_used: 0
-  last_used: null
+  used_in:
+  - content/drafts/carousel-why-saffron.md
+  times_used: 1
+  last_used: "2026-11-24"
 - id: zaf-photo-006
   file: photos/zaf-photo-006.jpg
   type: photo
@@ -3676,9 +3678,10 @@ assets:
   original: Downloaded from @drinkzafra (Drive folder)
   product: zafra-saffron
   pillar: saffron-explained
-  used_in: []
-  times_used: 0
-  last_used: null
+  used_in:
+  - content/drafts/carousel-why-saffron.md
+  times_used: 1
+  last_used: "2026-11-24"
 - id: zaf-ig-005
   file: instagram/zaf-ig-005.jpg
   type: instagram-photo
@@ -4140,9 +4143,10 @@ assets:
   original: Downloaded from @drinkzafra (Drive folder)
   product: zafra-saffron
   pillar: saffron-explained
-  used_in: []
-  times_used: 0
-  last_used: null
+  used_in:
+  - content/drafts/carousel-why-saffron.md
+  times_used: 1
+  last_used: "2026-11-24"
 - id: zaf-ig-034
   file: instagram/zaf-ig-034.mp4
   type: instagram-video
@@ -4326,9 +4330,10 @@ assets:
   - no-product
   product: null
   pillar: saffron-explained
-  used_in: []
-  times_used: 0
-  last_used: null
+  used_in:
+  - content/drafts/carousel-why-saffron.md
+  times_used: 1
+  last_used: "2026-11-24"
 - id: zaf-video-044
   file: video/zaf-video-044.mov
   type: video
