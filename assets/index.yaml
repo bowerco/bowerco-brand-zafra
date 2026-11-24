@@ -4407,3 +4407,20 @@ assets:
   used_in: []
   times_used: 0
   last_used: null
+- id: zaf-photo-100
+  file: photos/zaf-photo-100.jpg
+  type: photo
+  shoot: stock
+  orientation: landscape
+  size_px: [1600, 1067]
+  source_file: DTS_ECCENTRIC_NATURE_Mar_Boerr_Photos_ID8625.jpg
+  original: Emi upload 2026-11-24
+  brand_book_fit: 'Good. Bright daylight desert: pale dune curve against deep blue sky, rocky hill, desert grass, a small purple flowering shrub. Cooler and brighter than the sunset desert clips. Low resolution limits tight crops.'
+  description: 'Desert landscape: a smooth pale dune curving up against a clear blue sky, a rocky hill on the left, tufts of desert grass and a purple flowering shrub in the foreground. No product.'
+  usage_rule: 'Cleared (Emi holds rights to all files she shares, 2026-11-24). Heritage and desert: carousel lifestyle and colour-field slides, story backgrounds. Best crops: the dune curve against the sky (clean negative space for a title), the purple shrub (echoes the crocus). Max crop about 1000 px wide.'
+  tags: [desert, dune, sky, heritage, daylight, no-product, world]
+  product: null
+  pillar: heritage-not-hype
+  used_in: []
+  times_used: 0
+  last_used: null

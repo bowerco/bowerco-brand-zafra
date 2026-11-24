@@ -1,6 +1,6 @@
 # Asset audit: what we have, what's missing
 
-Audited 2026-11-24 against the format templates (`templates/`). Library: 98 photos, 46 videos, 39 past Instagram posts (`assets/index.yaml`).
+Audited 2026-11-24 against the format templates (`templates/`). Library: 99 photos, 46 videos, 39 past Instagram posts (`assets/index.yaml`).
 
 **Have** = ready to use as held crops. **Partial** = works, with a compromise (noted). **Missing** = goes on the shoot list (`shoots/next-brief.md`).
 
@@ -22,7 +22,7 @@ The single biggest gap: **moving macros on a plain seamless.** One studio day fi
 |---|---|---|---|
 | Beach, with bottle | Have | zaf-video-007 (4K master), 005, 006 | Six crops already mapped in `assets/reuse-ideas.md` |
 | Beach, sea and sun | Have | zaf-video-045 (4K master), 046 (Super 8 shoreline), zaf-ig-037 | 045 drifts slightly: crop tight and check the hold |
-| Desert | Have | zaf-video-042 (camels, locked), zaf-photo-099 (dunes still) | 099 is 1600 px: crops max about 1000 px wide |
+| Desert | Have | zaf-video-042 (camels, locked), zaf-photo-099 (ripples), 100 (dune and sky) | Stills are 1600 px: crops max about 1000 px wide. Still no moving desert shot besides the camels |
 | Saffron fields | Have | zaf-video-043 (0 to 3 s only), 044 | 043 pulls back after 3 s |
 | Water light | Have | zaf-video-041 (caustics) | Texture, or a colour field slide |
 | Pool | Partial | zaf-video-030 to 032 | Camera moves near the end; yellow item to confirm (`_gaps.md`) |

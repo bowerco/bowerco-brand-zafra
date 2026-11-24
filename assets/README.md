@@ -6,7 +6,7 @@ Everything here is indexed in `assets/index.yaml` (description, usage rule, bran
 |---|---|---|
 | `logos/` | Wordmark in 6 versions (SVG, PDF, EPS, PNG) | 23 files |
 | `fonts/` | Euclid Flex TRIAL (drafts only), Rubik (Arabic body, web fallback, OFL) | 5 + 4 |
-| `photos/` | Web copies, long edge 2048 px (ids run to 099, no 090) | 98 |
+| `photos/` | Web copies, long edge 2048 px (ids run to 100, no 090) | 99 |
 | `photos/masters/` | Full-resolution studio stills for tight crops (002 to 005) | 4 |
 | `video/` | H.264, 1080p, 30 fps, sound kept | 46 |
 | `video/masters/` | Full-resolution copies for tight crops (zaf-video-007 and 045, 4K) | 2 |
@@ -23,7 +23,7 @@ Everything here is indexed in `assets/index.yaml` (description, usage rule, bran
 | **Beach (iPhone)** | photo 091 to 098, video 005 to 007, 035 | Summer social, texture | Good: sun-led, natural. Photo 096 is the best golden-hour frame |
 | **Pool (iPhone)** | video 030 to 032 | Summer reels | Good light; confirm the yellow item in frame |
 | **Hands (iPhone)** | video 033 to 034 | Reels, transitions | Good: linen, gracious |
-| **Emi's world clips** | video 041 to 046, photo 099 | World reels: sea, shoreline, desert, camels, saffron fields, water light | Good. Cleared by Emi |
+| **Emi's world clips** | video 041 to 046, photo 099, 100 | World reels: sea, shoreline, desert, camels, saffron fields, water light | Good. Cleared by Emi |
 | **Instagram archive** | ig 001 to 039 | Reference and reposts | Several marked "do not reuse" (health claim, modesty, barware) |
 
 ## Best picks right now
