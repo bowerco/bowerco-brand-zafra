@@ -1,6 +1,6 @@
 # Asset audit: what we have, what's missing
 
-Audited 2026-11-24 against the format templates (`templates/`). Library: 99 photos, 46 videos, 39 past Instagram posts (`assets/index.yaml`).
+Audited 2026-11-24 against the format templates (`templates/`). Library: 99 photos, 46 videos, 42 past Instagram posts (`assets/index.yaml`).
 
 **Have** = ready to use as held crops. **Partial** = works, with a compromise (noted). **Missing** = goes on the shoot list (`shoots/next-brief.md`).
 
@@ -37,11 +37,11 @@ The single biggest gap: **moving macros on a plain seamless.** One studio day fi
 | Lifestyle moment | Have | Beach and desert clips above, zaf-photo-096, 097 | |
 | Real person drinking | **Missing** | zaf-ig-026 (still, casual cap: use with care) | Need: someone drinking Zafra, fixed camera, 5 to 20 s |
 | Colour field | Partial | zaf-photo-003, 099, zaf-video-041, zaf-ig-004 (thread bed) | Need: glow through glass, bubbles, threads bleeding into water |
-| Ritual loop | **Missing** | Factory filling 012 to 014 (cool light, supporting only), zaf-photo-005 (pour, still) | Need: pour over ice, bubbles rising, lemon cut, 2 to 3 s each |
+| Ritual loop | Partial | zaf-ig-042 (hands lift a net bag, locked, 720p), factory filling 012 to 014 (supporting only), zaf-photo-005 (pour, still) | Need: pour over ice, bubbles rising, lemon cut, 2 to 3 s each |
 | Ingredient: saffron | Have | zaf-ig-004, 014, 029 to 033, zaf-video-043, 044, zaf-photo-001 crop | Instagram copies are 1080 px: crop gently |
 | Ingredient: lemon | Have | zaf-photo-001 (full lemon bed), zaf-ig-016 | |
 | Ingredient: rose water | **Missing** | zaf-photo-001 has a rose, not rose water | Need: drops, a small glass bottle, a ripple in a dish |
-| Product still | Have | zaf-photo-004 (full-res), 002, zaf-ig-013 (fridge), zaf-ig-030 | A front-on packshot on a plain field is still missing |
+| Product still | Have | zaf-ig-040 (label macro), zaf-photo-004 (full-res), 002, zaf-ig-013 (fridge), zaf-ig-041 (stack, whole frame only), zaf-ig-030 | A front-on packshot on a plain field is still missing |
 | Four-pack | Partial | zaf-ig-008, 010, 011 (1080 px), zaf-video-029 (carton on the line) | Need: four-pack styled in studio |
 | Heritage: produced in Italy | Have | Factory photos 006 to 022, videos 008 to 029 | Supporting frames, crop on red caps and glass |
 | Heritage: born in Dubai | **Missing** | | Need: a held Dubai shot (skyline at golden hour, a majlis setting, a doorway) |
@@ -53,7 +53,7 @@ The single biggest gap: **moving macros on a plain seamless.** One studio day fi
 | Retailer push | Have | Beach crops, zaf-photo-003, 005, 004, zaf-ig-013 | Payoff frame works with zaf-photo-004 |
 | Where to find us | Partial | zaf-ig-002, 035, 036 (shelves), zaf-ig-001 (claim on sign: crop it out or skip) | Need: bottle in a real UAE store fridge or shelf, held |
 | Lifestyle | Have | All world reel sources | |
-| Detail: condensation | **Missing** | | Need: cold, wet bottle, drops on the label |
+| Detail: condensation | Partial | zaf-ig-040 (label macro, covered in drops) | 1080 px still. A moving version (drops running down) is still on the shoot list |
 
 ## Giveaway
 
@@ -69,7 +69,7 @@ The single biggest gap: **moving macros on a plain seamless.** One studio day fi
 | Shot type | Status | Assets | Note |
 |---|---|---|---|
 | Ingredient, moving | **Missing** | Stills only: zaf-photo-001, zaf-ig-004 | Need: threads falling, colour bleeding into water, lemon cut, rose water drops |
-| Bottle, extreme close | Have | zaf-photo-002, 004 (full-res), zaf-video-007 master (label), factory caps 006 to 010 | Crops: label script, flower, cap |
+| Bottle, extreme close | Have | zaf-ig-040 (label with condensation), zaf-photo-002, 004 (full-res), zaf-video-007 master (label), factory caps 006 to 010 | Crops: label script, flower, cap |
 | Liquid | Partial | zaf-photo-005 (pour, full-res still), zaf-photo-003 | Need: bubbles rising, pour on seamless, ice dropping |
 | Hero on a plain field | Partial | zaf-photo-004 (peach to red, white table edge) | Need: single bottle upright, centred, seamless coral and cream |
 

@@ -227,3 +227,8 @@ videos:
     postcard: true
     clips:
       - { in: "00:00", out: "00:06", content: "Super 8 film of a pale shoreline, small waves running in", pillar: modern-ritual, note: "Crop inside the film frame (edges visible). Soft and pale: pair with a cream logo only where contrast holds, else yellow." }
+  - id: zaf-ig-042
+    camera: locked
+    postcard: false
+    clips:
+      - { in: "00:00", out: "00:03", content: "top-down: hands lift a net bag of lemons, tennis balls and a bottle off a blue court", pillar: modern-ritual, note: "720p: keep crops wide (at least 560 px). Carousel ritual or lifestyle slide, story frame." }

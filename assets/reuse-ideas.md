@@ -57,3 +57,6 @@ Check the hold: handheld drift at the waterline.
 | zaf-photo-100 desert, dune and sky | Dune curve against the blue sky (4:5 crop 850:1062:750:0): C cover with the title in the sky. Purple shrub (crop 600:750:900:317): C colour field, a nod to the crocus. S background |
 | zaf-ig-004 thread bed | C ingredient, G slide 2 |
 | zaf-ig-011 four-pack by the sea | G cover (Oman) |
+| zaf-ig-040 label macro with condensation | Whole frame: C cover or product still (title on the yellow at left). Crops: the script with drops (R1 cut), NATURALLY UPLIFTING (S detail), SAFFRON ROSE WATER & LEMON (C label slide) |
+| zaf-ig-041 stacked bottles | Whole frame only (label text is distorted): C product still, G how to enter (space at left) |
+| zaf-ig-042 net bag on the court (video) | 9:16 hold 0 to 3 s: S frame. 4:5 crop 720:900:0:190: C ritual or lifestyle slide |

@@ -7,7 +7,7 @@ Same order as `bowerco/brand-template` and `brand-limousine`. Status as of 2026-
 - [x] **3. `brand/rules.yaml`**: colours, fonts, logo rules, claims, banned words, formats and their limits, camera rules.
 - [x] **4. `products/`**: Zafra 190 ml, single and four-pack, Talabat price (2026-11-17), stockists UAE and Oman. Missing: RRP, four-pack price, Zero Sugar.
 - [ ] **5. `brand/voice-samples/`**: no past captions they liked yet.
-- [x] **6. `assets/`**: logos (6 versions), Euclid Flex trial, 99 photos (+4 full-res studio masters), 46 videos (+2 4K masters), 39 past Instagram posts.
+- [x] **6. `assets/`**: logos (6 versions), Euclid Flex trial, 99 photos (+4 full-res studio masters), 46 videos (+2 4K masters), 42 past Instagram posts.
 - [x] **7. `assets/index.yaml`**: every asset indexed with usage rule. Clip moments in `video-clips.yaml`, crops in `reuse-ideas.md`.
 - [x] **8. `brand/pillars.md`**: 3 brand pillars, 5 content pillars, mapped to formats.
 - [x] **9. `templates/`**: product reel, world reel, carousel (slide kit + recipes), story set, giveaway, repurpose. Defined with Emi from her references (2026-11-24).

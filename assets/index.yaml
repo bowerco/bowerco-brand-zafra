@@ -4424,3 +4424,49 @@ assets:
   used_in: []
   times_used: 0
   last_used: null
+- id: zaf-ig-040
+  file: instagram/zaf-ig-040.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  size_px: [1080, 1350]
+  description: 'Label extreme close-up on a Saffron Glow field: the zafra script, the violet flower, NATURALLY UPLIFTING and SAFFRON ROSE WATER & LEMON, covered in fine condensation drops.'
+  usage_rule: 'Reuse OK (Emi, 2026-11-24). The strongest label and condensation shot in the library. Product reel bottle cuts, carousel cover or product still, story detail and payoff frames. 1080 px source: crop gently (900 px wide minimum for 9:16).'
+  tags: [instagram, past-post, label, macro, condensation, saffron-glow, product]
+  source_file: drinkzafra_1780405205_3910644755151824709_76285868847.jpg
+  original: Emi upload 2026-11-24 (from @drinkzafra)
+  product: zafra-saffron
+  pillar: quiet-saffron-luxury
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-041
+  file: instagram/zaf-ig-041.jpg
+  type: instagram-photo
+  shoot: instagram-archive
+  size_px: [1080, 1350]
+  description: 'Three bottles balanced in a stack on a warm grey seamless, one lying at the base, soft studio light.'
+  usage_rule: 'Use with care (Emi, 2026-11-24): the label text in this image is distorted (it reads "NAGIEALLY UFUFITING", "RONE WATCA"), so it looks retouched or generated. Never crop close on the labels. Fine small or as a whole-frame still; confirm with Zafra before paid use.'
+  tags: [instagram, past-post, stack, seamless, grey, product]
+  source_file: drinkzafra_1788267618_3976599456296295403_76285868847.jpg
+  original: Emi upload 2026-11-24 (from @drinkzafra)
+  product: zafra-saffron
+  pillar: quiet-saffron-luxury
+  used_in: []
+  times_used: 0
+  last_used: null
+- id: zaf-ig-042
+  file: instagram/zaf-ig-042.mp4
+  type: instagram-video
+  shoot: instagram-archive
+  size_px: [720, 1280]
+  duration_s: 5.8
+  description: 'Top-down on a blue court: hands lift a white net bag of lemons, tennis balls and a bottle of Zafra out of frame. Camera locked.'
+  usage_rule: 'Reuse OK (Emi, 2026-11-24). Locked camera, movement from the hands: carousel ritual or lifestyle slide, story frame. Use 0 to 3 s (bottle in frame). 720 px source: hold crops wide; no tight label crops. Sport cue: no performance claims.'
+  tags: [instagram, past-post, hands, net-bag, lemons, tennis, top-down, locked]
+  source_file: drinkzafra_1794924077_4032437733699713919_76285868847.mp4
+  original: Emi upload 2026-11-24 (from @drinkzafra)
+  product: zafra-saffron
+  pillar: modern-ritual
+  used_in: []
+  times_used: 0
+  last_used: null
