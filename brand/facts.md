@@ -2,7 +2,7 @@
 
 Last updated: 2026-11-24.
 
-Everything Zafra has confirmed as fact. Sources: Zafra Brand Facts (Google Doc, received 2026-11-18) and Zafra Brand Guidelines v1.2 (Nov 2025, "brand book"). If a fact is not here or in `products/`, it can't be used.
+Everything Zafra has confirmed as fact. Sources: Zafra Brand Facts (Google Doc, received 2026-11-18) and Zafra Brand Guidelines v1.2 (Nov 2025, "brand book"), both in `assets/reference/`. If a fact is not here or in `products/`, it can't be used.
 
 ## Health claims: read this first
 

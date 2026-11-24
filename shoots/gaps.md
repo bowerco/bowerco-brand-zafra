@@ -1,6 +1,6 @@
 # Asset audit: what we have, what's missing
 
-Audited 2026-11-24 against the format templates (`templates/`). Library: 99 photos, 46 videos, 39 past Instagram posts (`assets/index.yaml`).
+Audited 2026-11-24 against the format templates (`templates/`). Library: 98 photos, 46 videos, 39 past Instagram posts (`assets/index.yaml`).
 
 **Have** = ready to use as held crops. **Partial** = works, with a compromise (noted). **Missing** = goes on the shoot list (`shoots/next-brief.md`).
 

@@ -6,12 +6,12 @@ Everything here is indexed in `assets/index.yaml` (description, usage rule, bran
 |---|---|---|
 | `logos/` | Wordmark in 6 versions (SVG, PDF, EPS, PNG) | 23 files |
 | `fonts/` | Euclid Flex TRIAL (drafts only), Rubik (Arabic body, web fallback, OFL) | 5 + 4 |
-| `photos/` | Web copies, long edge 2048 px | 99 |
+| `photos/` | Web copies, long edge 2048 px (ids run to 099, no 090) | 98 |
 | `photos/masters/` | Full-resolution studio stills for tight crops (002 to 005) | 4 |
 | `video/` | H.264, 1080p, 30 fps, sound kept | 46 |
 | `video/masters/` | Full-resolution copies for tight crops (zaf-video-007 and 045, 4K) | 2 |
 | `instagram/` | Past @drinkzafra posts and reels, as posted | 39 |
-| `reference/` | Palette sheet, one stock photo (not for publishing) | 2 |
+| `reference/` | Brand book v1.2 and Brand Facts (the sources), palette sheet, one stock photo (not for publishing) | 4 |
 
 ## The shoots
 
