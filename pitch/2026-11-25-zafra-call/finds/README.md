@@ -75,4 +75,4 @@ Death to Stock files (02 to 05): check whether Emi's licence covers them; if so 
 | dubai-04-palms-straw-parasols-from-below.jpg | Palms and straw parasols from below, sun behind. Already 9:16 | Story background, beach club mood |
 | dubai-05-burj-al-arab-waves-dusk.jpg | Burj al Arab from the shoreline at dusk, waves. Already 9:16 | Born-in-Dubai slide, world mood |
 | dubai-06-burj-al-arab-blue-sea-jetski.jpg | Burj al Arab far off across a deep blue sea, a jet ski's wake | Carousel slide with text in the sky |
-| dubai-07-video-skyline-dusk-red-band-fhdvs10.mp4 | 720x1280, 11 s | @fhdvs10. **Locked shot:** Dubai skyline at dusk across the water, a red band of light under dark cloud, city lights | **World reel: the Dubai city shot we were missing** |
+| dubai-07-video-skyline-dusk-red-band-fhdvs10.mp4 | 720x1280, 11 s video. @fhdvs10. **Locked shot:** Dubai skyline at dusk across the water, a red band of light under dark cloud, city lights | **World reel: the Dubai city shot we were missing** |
