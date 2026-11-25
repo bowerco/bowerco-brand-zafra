@@ -41,3 +41,12 @@ Note: @zafra_saffron is a different saffron company with the same name, not our 
 | rose-08-video-flowers-splash-underwater.mp4 | 864x1878, 2.8 s | Screen recording: water splashing over pale flowers, then the flowers settle under water. Camera still | Product reel "rose water" cut (0.6 s) |
 
 Death to Stock files (02 to 05): check whether Emi's licence covers them; if so they could move into the real library like zaf-video-042.
+
+## lemon/
+| File | Size | What | Best for |
+|---|---|---|---|
+| lemon-01-lemon-tree-balustrade-blue-sky.jpg | 712x1024 | Lemon tree heavy with fruit over a stone balustrade, deep blue sky. Mediterranean | World mood, carousel "produced in Italy" slide |
+| lemon-02-lemons-crate-hard-light.jpg | 900x1200 | Lemons in a cardboard crate, hard low sun, deep shadows | Carousel ingredient slide (dark areas take cream text) |
+| lemon-03-lemon-crates-cobbles-topdown.jpg | 736x1308 | Two wooden crates of lemons on cobblestones, top-down, sun | Story frame (already 9:16) |
+| lemon-04-lemons-bowl-running-water.jpg | 1200x1500 | Lemons in a white bowl under running water, bubbles | Product reel lemon cut, carousel slide |
+| lemon-05-video-slices-on-red.mp4 | 1080x1920, 5.9 s | Fast cuts: backlit dried slice, four slices on a red field, whole lemons on red, a slice under a dark frame. Camera still | Product reel lemon cuts (the red fields match Zafra Red) |
