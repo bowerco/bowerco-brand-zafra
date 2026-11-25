@@ -4,7 +4,7 @@ Rhode-style carousel, 5 slides, 2 of them video. Topic set by Emi (2026-11-25): 
 
 | Slide | Media | Source | Text |
 |---|---|---|---|
-| 1 Cover | Photo | finds/saffron-stills/still-01 (placeholder) | SAFFRON AND MOOD |
+| 1 Cover | Photo | finds/saffron-stills/still-01 (placeholder) | DID YOU KNOW SAFFRON MAY LIFT YOUR MOOD? |
 | 2 | Video 6 s | finds/saffron/saffron-05 aerial pickers (placeholder) | BY HAND: Saffron is the red thread of the purple crocus, harvested by hand in a ritual centuries old. |
 | 3 | Photo | finds/saffron-stills/still-07 hands (placeholder) | THE COMPOUNDS: Its colour comes from crocin, its aroma from safranal. Researchers are studying how these compounds relate to mood and stress. |
 | 4 | Video 3 s | finds/saffron/saffron-06 petals falling onto threads (placeholder) | THE RESEARCH: In clinical trials, standardised saffron extracts of around 28 to 30 mg a day showed modest improvements in low mood compared with placebo. |
