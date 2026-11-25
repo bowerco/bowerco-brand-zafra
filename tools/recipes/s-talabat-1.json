@@ -1,0 +1,3 @@
+{"piece": "content/drafts/story-retailer-talabat.md", "out": "content/drafts/media/story-retailer-talabat/frame-01.jpg", "size": [1080, 1920],
+ "segments": [{"asset": "zaf-video-045", "use_master": true, "at": 1.5, "crop": "1215:2160:1310:0"}],
+ "text": {"lines": ["TOO HOT OUT?"], "weight": "Medium", "size": 76, "y": 0.2, "align": "center", "color": "#FFF9DA"}}

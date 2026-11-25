@@ -10,6 +10,7 @@
 - The lines build: read in order, they make one sentence or one thought.
 - One link sticker, same spot on every frame, so people can act at any point (lifestyle sets may skip it).
 - Images build too: a detail, closer, the bottle, then the payoff on the last frame.
+- If a background is light where the line sits, add the render `scrim` (a soft dark fade from the top) rather than moving the line. Same scrim on every frame of the set.
 - Logo file on the last frame only (cream or yellow on imagery).
 - Backgrounds: held video crops or stills from `assets/index.yaml`. Never a full-frame phone clip.
 

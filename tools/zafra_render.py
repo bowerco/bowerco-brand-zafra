@@ -242,6 +242,21 @@ def render(recipe_path, log=False):
         run('-f', 'concat', '-safe', '0', '-i', lst, '-c', 'copy', base)
 
     overlays = []
+    if r.get('scrim'):
+        # Soft dark fade behind story lines (story sets only): {"scrim": {"edge": "top", "opacity": 0.45, "reach": 0.4}}
+        sc = r['scrim']
+        g = Image.new('RGBA', tuple(size), (0, 0, 0, 0))
+        reach = int(size[1] * sc.get('reach', 0.4))
+        op = sc.get('opacity', 0.45)
+        px = g.load()
+        for yy in range(reach):
+            a = int(255 * op * (1 - yy / reach) ** 1.6)
+            row = yy if sc.get('edge', 'top') == 'top' else size[1] - 1 - yy
+            for xx in range(size[0]):
+                px[xx, row] = (0, 0, 0, a)
+        sp = os.path.join(tmp, 'scrim.png')
+        g.save(sp)
+        overlays.append((sp, '0:0', 0))
     lg = r.get('logo')
     if lg:
         png = svg_png(lg.get('file', 'zafra-logo-cream.svg'), lg.get('width', 440), tmp)
@@ -251,7 +266,8 @@ def render(recipe_path, log=False):
         overlays.append((png, f"(W-w)/2:H*{lg.get('y', 0.5)}-h/2", start))
     if r.get('text'):
         overlays.append((text_png(r['text'], size, tmp), '0:0', 0))
-        warn_contrast(base, r['text'], still, tmp)
+        if not r.get('scrim'):
+            warn_contrast(base, r['text'], still, tmp)
     if r.get('editorial'):
         overlays.append((editorial_png(r['editorial'], size, tmp), '0:0', 0))
         warn_contrast(base, r['editorial'], still, tmp)
