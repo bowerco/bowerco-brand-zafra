@@ -48,6 +48,7 @@ No other formats. No single posts except giveaways. No newsletter yet.
 - **Look at every render** at phone size before it goes to review.
 
 ## Assets
+- `pitch/` is presentation material only. Never use anything from it in content, and never index it.
 - Pick assets from `assets/index.yaml` only. Respect each asset's `usage_rule`. Anything marked "do not reuse" is out.
 - **Log every asset used:** `used_in`, `times_used`, `last_used` (`tools/zafra_render.py --log` does this).
 - If no suitable asset exists, write `ASSET NEEDED:` with a shot description and add it to `shoots/gaps.md`.
