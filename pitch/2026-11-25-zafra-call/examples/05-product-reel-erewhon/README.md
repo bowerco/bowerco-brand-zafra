@@ -18,5 +18,5 @@
 What this shows Zafra: the label, the pour and the hero exist; every moving ingredient shot is borrowed. The studio shoot (`shoots/next-brief.md` 1 to 9) replaces cuts 1, 3, 5, 7 and 9 with their own footage, in 4K.
 
 ## v2 (Emi, 2026-11-25): all video, no photos
-`product-reel-v2.mp4`, recipe `recipe-v2.json`. The three product photos were turned into video by Emi in Gemini (`finds/gemini/`, 360x640 at 10 fps, converted to 30 fps). Cuts: lemon slice, label (Gemini), saffron thread macro, pour (Gemini), lemon slices on red, label close (Gemini), rose water splash, glass from above (Gemini), crocus, then the hero bottle with drifting dappled light (3 s).
+`product-reel-v2.mp4`, recipe `recipe-v2.json`. The three product photos were turned into video by Emi in Gemini (`finds/gemini/`, 360x640 at 10 fps, converted to 30 fps). Cuts: lemon slice, label (Gemini), saffron thread macro, pour (Gemini), lemon slices on red, label close (Gemini), rose water splash, glass from above (Gemini), crocus, then the hero bottle (Gemini, 3 s).
 Watch: the Gemini clips are low resolution, so they are soft at full screen.
