@@ -50,3 +50,11 @@ Death to Stock files (02 to 05): check whether Emi's licence covers them; if so 
 | lemon-03-lemon-crates-cobbles-topdown.jpg | 736x1308 | Two wooden crates of lemons on cobblestones, top-down, sun | Story frame (already 9:16) |
 | lemon-04-lemons-bowl-running-water.jpg | 1200x1500 | Lemons in a white bowl under running water, bubbles | Product reel lemon cut, carousel slide |
 | lemon-05-video-slices-on-red.mp4 | 1080x1920, 5.9 s | Fast cuts: backlit dried slice, four slices on a red field, whole lemons on red, a slice under a dark frame. Camera still | Product reel lemon cuts (the red fields match Zafra Red) |
+
+## desert/
+| File | Size | What | Best for |
+|---|---|---|---|
+| desert-01-sun-disc-over-dunes.jpg | 1200x1600 | Red sun disc over rolling dunes, peach sky, tracks in the sand | World mood (pairs with the camels), carousel cover with title in the sky |
+| desert-02-ripples-desert-flowers-shadows.jpg | 1200x1600 | Sand ripples with tiny white desert flowers and long shadows | Carousel colour field, heritage slide |
+| desert-03-dunes-wide-dusk.jpg | 736x552 | Wide dunes at dusk, landscape, low resolution | Background only |
+| desert-04-dunes-wind-golden-sky.jpg | 900x1200 | Wind lifting sand off a dune crest, golden clouds | World mood, story background (sand moving reads as video) |
