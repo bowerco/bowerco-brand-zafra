@@ -1,0 +1,27 @@
+:root{--red:#F5471C;--deep:#B50029;--cream:#FFF9DA;--violet:#94167E;--mist:#FFF0FF;--glow:#FFC13C}
+section{padding:128px;background:var(--cream);color:var(--deep);font-family:"Rubik",sans-serif;display:flex;flex-direction:column;gap:40px;counter-increment:page}
+section.red{background:var(--red);color:var(--cream)}
+section.violet{background:var(--violet);color:var(--cream)}
+h1{font-size:104px;font-weight:500;line-height:1.0;letter-spacing:-1px;text-transform:uppercase}
+h2{font-size:64px;font-weight:500;line-height:1.05;text-transform:uppercase}
+h3{font-size:36px;font-weight:500;line-height:1.15}
+.kicker{font-size:28px;font-weight:500;letter-spacing:3px;text-transform:uppercase}
+.lead{font-size:36px;line-height:1.35}
+.small{font-size:26px;line-height:1.35}
+.split{display:flex;gap:64px;align-items:center;flex:1}
+.text{display:flex;flex-direction:column;gap:32px;width:560px}
+.media-row{display:flex;gap:24px;align-items:flex-start}
+.media{border-radius:16px;object-fit:cover}
+.goal-list{display:flex;gap:32px}
+.goal-item{display:flex;flex-direction:column;gap:16px;width:520px;border-top:3px solid var(--cream);padding-top:24px}
+.cards{display:flex;gap:24px;flex:1}
+.card{display:flex;flex-direction:column;gap:20px;width:398px;background:var(--mist);border-radius:16px;padding:40px;box-sizing:border-box}
+.card .kicker{color:var(--red)}
+.card .small{color:var(--violet)}
+.tag{font-size:24px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--violet)}
+.group{display:flex;flex-direction:column;gap:16px}
+.miss{display:grid;grid-template-columns:1fr 1fr;gap:40px 64px}
+.miss-item{display:flex;flex-direction:column;gap:12px;border-top:3px solid var(--cream);padding-top:24px}
+.logo{position:absolute;right:128px;bottom:96px;width:220px;height:124px;object-fit:contain}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.goal-item,.card,.miss-item{animation:rise 500ms cubic-bezier(.25,.1,.25,1) both;animation-delay:calc(var(--i) * 120ms)}
