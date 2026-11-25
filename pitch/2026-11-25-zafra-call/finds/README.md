@@ -50,6 +50,7 @@ Death to Stock files (02 to 05): check whether Emi's licence covers them; if so 
 | lemon-03-lemon-crates-cobbles-topdown.jpg | 736x1308 | Two wooden crates of lemons on cobblestones, top-down, sun | Story frame (already 9:16) |
 | lemon-04-lemons-bowl-running-water.jpg | 1200x1500 | Lemons in a white bowl under running water, bubbles | Product reel lemon cut, carousel slide |
 | lemon-05-video-slices-on-red.mp4 | 1080x1920, 5.9 s | Fast cuts: backlit dried slice, four slices on a red field, whole lemons on red, a slice under a dark frame. Camera still | Product reel lemon cuts (the red fields match Zafra Red) |
+| lemon-06-video-mirror-terrace-sea-levoyage.mp4 | 720x1280, 9.3 s | @levoyageofficiel. **Locked shot:** a wooden frame on a white terrace wall, palm fronds above, the sea and an island behind. In the frame, a bowl of lemons and a glass; a hand reaches in and out. Already 9:16 | **World reel (Jacquemus): the most on-brief clip so far.** Movement only from the hand |
 
 ## desert/
 | File | Size | What | Best for |
