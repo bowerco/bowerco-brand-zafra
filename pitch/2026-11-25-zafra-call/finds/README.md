@@ -13,6 +13,8 @@ Found on Instagram and Pinterest by Emi, 2026-11-24. Other people's work: mockup
 | saffron-06-matierepremiereparfums.mp4 | @matierepremiereparfums | 8 s | Petals tipped onto a tray, threads among the petals. Logo end card | Product reel ingredient cut, carousel colour field |
 
 Note: @zafra_saffron is a different saffron company with the same name, not our client.
+| saffron-07-video-threads-and-petals-pile.mp4 | 732x1590, 9 s | Screen recording. A pile of purple crocus petals with a mound of red threads above it, on golden wood, camera still | Product reel ingredient cut, carousel colour field |
+
 
 ## saffron-stills/
 | File | Size | What | Best for |
@@ -41,6 +43,8 @@ Note: @zafra_saffron is a different saffron company with the same name, not our 
 | rose-08-video-flowers-splash-underwater.mp4 | 864x1878, 2.8 s | Screen recording: water splashing over pale flowers, then the flowers settle under water. Camera still | Product reel "rose water" cut (0.6 s) |
 
 Death to Stock files (02 to 05): check whether Emi's licence covers them; if so they could move into the real library like zaf-video-042.
+| rose-09-video-pink-rose-blue-sky-gif.mp4 | 500x281, 2 s loop | From a GIF. A pink rose against flat blue sky, petals opening. Very small | Mood only, or a tiny cut; too low-res to crop |
+
 
 ## lemon/
 | File | Size | What | Best for |
@@ -51,6 +55,8 @@ Death to Stock files (02 to 05): check whether Emi's licence covers them; if so 
 | lemon-04-lemons-bowl-running-water.jpg | 1200x1500 | Lemons in a white bowl under running water, bubbles | Product reel lemon cut, carousel slide |
 | lemon-05-video-slices-on-red.mp4 | 1080x1920, 5.9 s | Fast cuts: backlit dried slice, four slices on a red field, whole lemons on red, a slice under a dark frame. Camera still | Product reel lemon cuts (the red fields match Zafra Red) |
 | lemon-06-video-mirror-terrace-sea-levoyage.mp4 | 720x1280, 9.3 s | @levoyageofficiel. **Locked shot:** a wooden frame on a white terrace wall, palm fronds above, the sea and an island behind. In the frame, a bowl of lemons and a glass; a hand reaches in and out. Already 9:16 | **World reel (Jacquemus): the most on-brief clip so far.** Movement only from the hand |
+| lemon-07-video-lemon-tree-leaves-sun.mp4 | 622x816, 11 s | Screen recording. Lemons hanging on the tree (0 to 4 s, held), then leaves with the sun flaring through (camera moves a little) | World reel or story frame: use 0 to 4 s |
+
 
 ## desert/
 | File | Size | What | Best for |
@@ -69,3 +75,4 @@ Death to Stock files (02 to 05): check whether Emi's licence covers them; if so 
 | dubai-04-palms-straw-parasols-from-below.jpg | Palms and straw parasols from below, sun behind. Already 9:16 | Story background, beach club mood |
 | dubai-05-burj-al-arab-waves-dusk.jpg | Burj al Arab from the shoreline at dusk, waves. Already 9:16 | Born-in-Dubai slide, world mood |
 | dubai-06-burj-al-arab-blue-sea-jetski.jpg | Burj al Arab far off across a deep blue sea, a jet ski's wake | Carousel slide with text in the sky |
+| dubai-07-video-skyline-dusk-red-band-fhdvs10.mp4 | 720x1280, 11 s | @fhdvs10. **Locked shot:** Dubai skyline at dusk across the water, a red band of light under dark cloud, city lights | **World reel: the Dubai city shot we were missing** |
