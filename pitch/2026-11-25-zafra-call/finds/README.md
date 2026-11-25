@@ -27,3 +27,17 @@ Note: @zafra_saffron is a different saffron company with the same name, not our 
 | still-08-threads-blue-bowl.jpg | 736x981 | Threads in a pale blue ceramic bowl | Carousel ingredient slide |
 | still-09-threads-scatter-cream.jpg | 1200x1800 | Threads scattered on a cream seamless, lots of space | Product reel ingredient cut, carousel slide with text in the space |
 | still-10-flowers-plate-threads-dark-table.jpg | 731x898 | Flowers on a dark table, a white plate of threads, hard sun | Carousel harvest slide |
+
+## rose-water/
+| File | Size | What | Best for |
+|---|---|---|---|
+| rose-01-petals-floating-pool-water.jpg | 800x1200 | Red and pink rose petals floating on clear blue water, ripples, sun | World mood, carousel colour field, story background |
+| rose-02-DTS-ID15150-red-ranunculus-underwater.jpg | 1280x1919 | Death to Stock. Red flowers plunged into water, bubbles, splash at the surface | Product reel "rose water" cut, carousel ingredient slide |
+| rose-03-DTS-ID15148-alstroemeria-underwater.jpg | 1280x1920 | Death to Stock. Pink flowers through water and glass, light streaks | Colour field |
+| rose-04-DTS-ID15155-white-flowers-bubbles.jpg | 1280x1919 | Death to Stock. White flowers under water, bubbles, cool green light | Bubbles and freshness (sparkling cue) |
+| rose-05-DTS-ID15181-flowers-frozen-ice-cubes.jpg | 1280x1919 | Death to Stock. Flowers frozen in ice cubes, stacked, backlit | "Over ice" ritual slide |
+| rose-06-pink-roses-water-sunlight.jpg | 736x1308 | Pink roses and petals in shallow water, sun and shadow | Story frame (already 9:16) |
+| rose-07-red-roses-brass-bowl.jpg | 736x1308 | Red roses floating in a brass bowl. Gulf hospitality feel | Heritage carousel, story frame |
+| rose-08-video-flowers-splash-underwater.mp4 | 864x1878, 2.8 s | Screen recording: water splashing over pale flowers, then the flowers settle under water. Camera still | Product reel "rose water" cut (0.6 s) |
+
+Death to Stock files (02 to 05): check whether Emi's licence covers them; if so they could move into the real library like zaf-video-042.
