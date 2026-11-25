@@ -7,3 +7,4 @@ Jacquemus-style world reel. One held shot, 9.2 s, cream Zafra logo centred for t
 - Grade matched to the four Jacquemus references (measured: lifted blacks around 0.07 to 0.15, highlights kept under clipping, natural daylight, gentle warmth, light film grain):
   `curves=r='0/0.07 0.5/0.52 1/0.96':g='0/0.06 0.5/0.5 1/0.95':b='0/0.07 0.5/0.47 1/0.93',eq=saturation=1.05,noise=alls=6:allf=t`
 - Logo: `assets/logos/zafra-logo-cream.svg`, 520 px wide, centred.
+- Tight version (Emi, 2026-11-25): world-reel-lemon-terrace-tight.mp4, crop 340:604:228:346 inside the mirror (sea, lemons, glass, hand only), light sharpening. Used in the deck.
