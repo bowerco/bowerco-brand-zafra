@@ -21,6 +21,7 @@ Recipe (JSON):
      "in": 1.0, "out": 9.5,                                # seconds (videos). For a still from video: "at": 3.7
      "crop": "900:1600:760:1130",                          # w:h:x:y in the source pixels, held
      "stabilize": false}                                   # only for small handheld drift: check the result
+    # a photo as a cut inside a video: {"asset": "zaf-ig-040", "hold": 0.6, "crop": "..."}
   ],
   "logo": {"file": "zafra-logo-cream.svg", "width": 440, "y": 0.5, "on": "all"},   # or null. on: all | last
   "text": {"lines": ["SERVE CHILLED."], "weight": "Medium", "size": 64, "y": 0.82, "align": "center", "color": "#FFF9DA"},  # or null. align: center|left|right. Colour: cream #FFF9DA or white only. Warns under 3:1 contrast
@@ -226,6 +227,10 @@ def render(recipe_path, log=False):
         if still:
             at = ['-ss', str(seg['at'])] if 'at' in seg else []
             run(*at, '-i', src, '-frames:v', '1', '-vf', ','.join(chain), p)
+        elif src.lower().endswith(('.jpg', '.jpeg', '.png')):
+            # a still held as a cut inside a video: {"file"/"asset": photo, "hold": 0.6, "crop": ...}
+            run('-loop', '1', '-t', str(seg.get('hold', 0.6)), '-i', src, '-vf', f'fps={FPS},' + ','.join(chain) + ',format=yuv420p',
+                '-an', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '16', p)
         else:
             t0, t1 = seg.get('in', 0), seg.get('out', dur)
             run('-ss', str(t0), '-t', str(t1 - t0), '-i', src, '-vf', f'fps={FPS},' + ','.join(chain) + ',format=yuv420p',
