@@ -14,7 +14,7 @@ Found on Instagram and Pinterest by Emi, 2026-11-24. Other people's work: mockup
 
 Note: @zafra_saffron is a different saffron company with the same name, not our client.
 | saffron-07-video-threads-and-petals-pile.mp4 | 732x1590, 9 s | Screen recording. A pile of purple crocus petals with a mound of red threads above it, on golden wood, camera still | Product reel ingredient cut, carousel colour field |
-
+| saffron-08-givaudannaturals-crocus-seamless.mp4 | @givaudannaturals | 21 s | **Studio, pale pink seamless, camera still:** a crocus opening (time-lapse, 0 to 5 s), petals and threads close (5 to 9.5 s), extreme macro of one thread (9.5 to 12 s), the flower again (12 to 17 s). End card after 17 s | **Product reel ingredient cuts: exactly the Erewhon look** |
 
 ## saffron-stills/
 | File | Size | What | Best for |

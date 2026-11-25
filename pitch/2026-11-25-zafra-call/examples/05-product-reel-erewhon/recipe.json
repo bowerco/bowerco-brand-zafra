@@ -1,13 +1,68 @@
-{"out": "pitch/2026-11-25-zafra-call/examples/05-product-reel-erewhon/product-reel.mp4", "size": [1080, 1920], "logo": null, "audio": false,
+{
+ "out": "pitch/2026-11-25-zafra-call/examples/05-product-reel-erewhon/product-reel.mp4",
+ "size": [
+  1080,
+  1920
+ ],
+ "logo": null,
+ "audio": false,
  "segments": [
-  {"file": "pitch/2026-11-25-zafra-call/finds/lemon/lemon-05-video-slices-on-red.mp4", "in": 0.2, "out": 0.8, "crop": "810:1440:135:480"},
-  {"asset": "zaf-ig-040", "hold": 0.6, "crop": "640:1138:260:212"},
-  {"file": "pitch/2026-11-25-zafra-call/finds/saffron/saffron-02-taj.dalview.mp4", "in": 2.8, "out": 3.5, "crop": "540:960:90:200"},
-  {"asset": "zaf-photo-005", "use_master": true, "hold": 0.6, "crop": "1500:2667:1630:600"},
-  {"file": "pitch/2026-11-25-zafra-call/finds/lemon/lemon-05-video-slices-on-red.mp4", "in": 1.6, "out": 2.2, "crop": "810:1440:135:240"},
-  {"asset": "zaf-ig-040", "hold": 0.6, "crop": "560:996:400:0"},
-  {"file": "pitch/2026-11-25-zafra-call/finds/rose-water/rose-08-video-flowers-splash-underwater.mp4", "in": 0.3, "out": 1.0, "crop": "702:1248:81:300"},
-  {"asset": "zaf-photo-003", "use_master": true, "hold": 0.6, "crop": "1000:1778:530:400"},
-  {"file": "pitch/2026-11-25-zafra-call/finds/saffron/saffron-07-video-threads-and-petals-pile.mp4", "in": 1.0, "out": 1.6, "crop": "560:996:86:60"},
-  {"asset": "zaf-ig-030", "hold": 3.0, "crop": "520:924:280:20"}
- ]}
+  {
+   "file": "pitch/2026-11-25-zafra-call/finds/lemon/lemon-05-video-slices-on-red.mp4",
+   "in": 0.2,
+   "out": 0.8,
+   "crop": "810:1440:135:480"
+  },
+  {
+   "asset": "zaf-ig-040",
+   "hold": 0.6,
+   "crop": "640:1138:260:212"
+  },
+  {
+   "file": "pitch/2026-11-25-zafra-call/finds/saffron/saffron-08-givaudannaturals-crocus-seamless.mp4",
+   "in": 10.0,
+   "out": 10.7,
+   "crop": "540:960:90:160"
+  },
+  {
+   "asset": "zaf-photo-005",
+   "use_master": true,
+   "hold": 0.6,
+   "crop": "1500:2667:1630:600"
+  },
+  {
+   "file": "pitch/2026-11-25-zafra-call/finds/lemon/lemon-05-video-slices-on-red.mp4",
+   "in": 1.6,
+   "out": 2.2,
+   "crop": "810:1440:135:240"
+  },
+  {
+   "asset": "zaf-ig-040",
+   "hold": 0.6,
+   "crop": "560:996:400:0"
+  },
+  {
+   "file": "pitch/2026-11-25-zafra-call/finds/rose-water/rose-08-video-flowers-splash-underwater.mp4",
+   "in": 0.3,
+   "out": 1.0,
+   "crop": "702:1248:81:300"
+  },
+  {
+   "asset": "zaf-photo-003",
+   "use_master": true,
+   "hold": 0.6,
+   "crop": "1000:1778:530:400"
+  },
+  {
+   "file": "pitch/2026-11-25-zafra-call/finds/saffron/saffron-08-givaudannaturals-crocus-seamless.mp4",
+   "in": 2.0,
+   "out": 2.6,
+   "crop": "600:1067:60:110"
+  },
+  {
+   "asset": "zaf-ig-030",
+   "hold": 3.0,
+   "crop": "520:924:280:20"
+  }
+ ]
+}
