@@ -58,3 +58,13 @@ Death to Stock files (02 to 05): check whether Emi's licence covers them; if so 
 | desert-02-ripples-desert-flowers-shadows.jpg | 1200x1600 | Sand ripples with tiny white desert flowers and long shadows | Carousel colour field, heritage slide |
 | desert-03-dunes-wide-dusk.jpg | 736x552 | Wide dunes at dusk, landscape, low resolution | Background only |
 | desert-04-dunes-wind-golden-sky.jpg | 900x1200 | Wind lifting sand off a dune crest, golden clouds | World mood, story background (sand moving reads as video) |
+
+## dubai/
+| File | What | Best for |
+|---|---|---|
+| dubai-01-burj-khalifa-haze-sunset-water.jpg | Burj Khalifa in peach haze over the water, a bird. Already 9:16 | Born-in-Dubai carousel cover, world mood, story frame (title in the sky) |
+| dubai-02-beach-palm-two-parasols.jpg | One palm between two white parasols, turquoise sea, flat blue sky. Very Jacquemus | World mood (beach season), carousel lifestyle slide |
+| dubai-03-fringed-orange-parasol-blue-sky.jpg | Orange fringed parasol against deep blue sky. Zafra Red on blue | Colour field, story background, beach season cover |
+| dubai-04-palms-straw-parasols-from-below.jpg | Palms and straw parasols from below, sun behind. Already 9:16 | Story background, beach club mood |
+| dubai-05-burj-al-arab-waves-dusk.jpg | Burj al Arab from the shoreline at dusk, waves. Already 9:16 | Born-in-Dubai slide, world mood |
+| dubai-06-burj-al-arab-blue-sea-jetski.jpg | Burj al Arab far off across a deep blue sea, a jet ski's wake | Carousel slide with text in the sky |
